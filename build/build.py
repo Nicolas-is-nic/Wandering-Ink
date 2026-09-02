@@ -503,7 +503,10 @@ def main():
 
         if status == "published":
             chapters_dir = pkg_dir / meta.get("chapters_ref", "chapters")
-            chapter_files = sorted(chapters_dir.glob("*.yaml"))
+            chapter_files = sorted(
+                chapters_dir.glob("*.yaml"),
+                key=lambda f: load_yaml(f).get("era", ""),  # 按时代排序，保证章节时间顺序
+            )
             if not chapter_files:
                 err(f"{pkg_dir}: published 人物没有任何章节 YAML")
             for ch_path in chapter_files:
@@ -560,7 +563,7 @@ def main():
         fid = meta["id"]
         chapters = []
         chapters_dir = pkg_dir / meta.get("chapters_ref", "chapters")
-        for ch_path in sorted(chapters_dir.glob("*.yaml")):
+        for ch_path in sorted(chapters_dir.glob("*.yaml"), key=lambda f: load_yaml(f).get("era", "")):
             chapter = load_yaml(ch_path)
             chapters.append(chapter)
 

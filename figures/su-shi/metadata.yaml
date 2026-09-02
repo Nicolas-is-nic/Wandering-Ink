@@ -1,0 +1,54 @@
+# 苏轼人物包元数据
+# 坐标为现代地名近似坐标（古今地名对照的锚点），v1 用于 SVG 足迹卷轴投影
+id: su-shi
+name: 苏轼
+courtesy_name: 子瞻
+art_name: 东坡居士
+born: 1037
+died: 1101
+one_liner: 北宋文学家、书画家，唐宋八大家之一
+status: published            # published | planned
+birthplace: 眉山              # 地名入 places 表
+
+places:                       # 古今地名对照表：全包唯一坐标源，scene 与 route 均按名引用
+  眉山: { lng: 103.85, lat: 30.08 }
+  汴京: { lng: 114.31, lat: 34.80 }
+  凤翔: { lng: 107.40, lat: 34.52 }
+  杭州: { lng: 120.16, lat: 30.25 }
+  密州: { lng: 119.41, lat: 35.99 }
+  徐州: { lng: 117.28, lat: 34.26 }
+  湖州: { lng: 120.09, lat: 30.87 }
+  黄州: { lng: 114.87, lat: 30.45 }
+  定惠院: { lng: 114.89, lat: 30.45 }
+  东坡: { lng: 114.90, lat: 30.44 }
+  临皋亭: { lng: 114.87, lat: 30.43 }
+  沙湖: { lng: 115.10, lat: 30.42 }
+  蕲水: { lng: 115.27, lat: 30.45 }
+  赤壁矶: { lng: 114.86, lat: 30.43 }
+  汝州: { lng: 112.84, lat: 34.17 }
+  登州: { lng: 120.76, lat: 37.81 }
+  惠州: { lng: 114.42, lat: 23.11 }
+  儋州: { lng: 109.58, lat: 19.52 }
+  常州: { lng: 119.97, lat: 31.81 }
+
+route:                        # 足迹总览（人物页地图数据源），坐标经 places 查询
+  - { place: 眉山, year: 1037, label: 生于眉山 }
+  - { place: 汴京, year: 1056, label: 出川赴京 }
+  - { place: 凤翔, year: 1061, label: 签判凤翔 }
+  - { place: 汴京, year: 1065, label: 还朝 }
+  - { place: 杭州, year: 1071, label: 通判杭州 }
+  - { place: 密州, year: 1074, label: 知密州 }
+  - { place: 徐州, year: 1077, label: 知徐州 }
+  - { place: 湖州, year: 1079, label: 知湖州 }
+  - { place: 汴京, year: 1079, label: 乌台诗案下狱 }
+  - { place: 黄州, year: 1080, label: 贬黄州 }
+  - { place: 汝州, year: 1084, label: 量移汝州 }
+  - { place: 登州, year: 1085, label: 知登州 }
+  - { place: 汴京, year: 1085, label: 还朝翰林 }
+  - { place: 杭州, year: 1089, label: 知杭州 }
+  - { place: 汴京, year: 1091, label: 召还 }
+  - { place: 惠州, year: 1094, label: 贬惠州 }
+  - { place: 儋州, year: 1097, label: 贬儋州 }
+  - { place: 常州, year: 1101, label: 卒于常州 }
+
+chapters_ref: chapters/

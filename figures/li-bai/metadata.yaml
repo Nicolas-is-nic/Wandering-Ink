@@ -1,0 +1,17 @@
+# 李白人物包（待生成占位，验证多人物框架）
+id: li-bai
+name: 李白
+courtesy_name: 太白
+art_name: 青莲居士
+born: 701
+died: 762
+one_liner: 唐代浪漫主义诗人，诗仙
+status: planned
+birthplace: 碎叶城
+places:
+  碎叶城: { lng: 80.88, lat: 42.80 }
+  长安: { lng: 108.94, lat: 34.34 }
+route:
+  - { place: 碎叶城, year: 701 }
+  - { place: 长安, year: 742 }
+chapters_ref: chapters/

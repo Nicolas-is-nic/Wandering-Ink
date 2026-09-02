@@ -1,0 +1,17 @@
+# 辛弃疾人物包（待生成占位，验证多人物框架）
+id: xin-qiji
+name: 辛弃疾
+courtesy_name: 幼安
+art_name: 稼轩居士
+born: 1140
+died: 1207
+one_liner: 南宋豪放派词人，词中之龙
+status: planned
+birthplace: 历城
+places:
+  历城: { lng: 117.02, lat: 36.68 }
+  临安: { lng: 120.16, lat: 30.25 }
+route:
+  - { place: 历城, year: 1140 }
+  - { place: 临安, year: 1162 }
+chapters_ref: chapters/

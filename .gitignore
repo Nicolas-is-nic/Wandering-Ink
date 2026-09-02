@@ -1,0 +1,19 @@
+# Python 虚拟环境与缓存（uv 环境，可随时 uv venv 重建）
+.venv/
+__pycache__/
+*.pyc
+
+# 构建产物（.venv/bin/python build/build.py 一键重建）
+dist/
+
+# 临时文档与脚本（AI 协作产物，不入库）
+claude_docs/
+claude_scripts/
+
+# macOS 系统文件
+.DS_Store
+
+# 编辑器与工具
+.idea/
+.vscode/
+.pi/

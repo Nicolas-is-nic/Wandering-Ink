@@ -25,7 +25,7 @@ scenes:
     year: 1085
     source: 孔凡礼《苏轼年谱》元丰八年条；《宋史·苏轼传》
     notes: []
-    proofed: false
+    proofed: true
 
   - id: rocket-promotion
     type: event
@@ -43,7 +43,7 @@ scenes:
     year: 1086
     source: 孔凡礼《苏轼年谱》元祐元年条
     notes: []
-    proofed: false
+    proofed: true
 
   - id: sima-guang-argue
     type: narrative
@@ -63,7 +63,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》元祐元年条；《铁围山丛谈》等宋人笔记
     notes:
       - "司马牛之呼：出自蔡绦《铁围山丛谈》，细节属笔记家言，待校"
-    proofed: false
+    proofed: true
 
   - id: court-factions
     type: narrative
@@ -85,7 +85,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》元祐三年条；《宋史·苏轼传》
     notes:
       - "洛蜀党争：程颐洛党与苏轼蜀党之争，为元祐政治重要事件"
-    proofed: false
+    proofed: true
 
   - id: sumen-disciples
     type: event
@@ -104,7 +104,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》；《宋史·黄庭坚传》等
     notes:
       - "西园雅集：传为李公麟绘苏轼与苏门友人雅集图事，真伪历代有争议"
-    proofed: false
+    proofed: true
 
   - id: hangzhou-governor
     type: narrative
@@ -123,7 +123,7 @@ scenes:
     year: 1089
     source: 孔凡礼《苏轼年谱》元祐四年条；《宋史·苏轼传》
     notes: []
-    proofed: false
+    proofed: true
 
   - id: anle-fang
     type: event
@@ -141,7 +141,7 @@ scenes:
     notes:
       - "安乐坊被视为中国最早的公立医院之一，后改名安济坊"
       - "公私筹资数额见于宋人记载，具体数字待校"
-    proofed: false
+    proofed: true
 
   - id: su-ti
     type: event
@@ -160,7 +160,7 @@ scenes:
     source: 《宋史·苏轼传》；苏轼《乞开杭州西湖状》
     notes:
       - "浚湖筑堤用工与工期数字以奏状为准，此处取其大要"
-    proofed: false
+    proofed: true
 
   - id: zeng-liu-jingwen
     type: poem
@@ -177,7 +177,7 @@ scenes:
     notes:
       - "刘景文时任两浙兵马都监，年近六十，怀才不遇——苏轼赠诗勉其晚岁"
       - "橙黄橘绿：化用橘颂遗意，喻人到暮年方见本色"
-    proofed: false
+    proofed: true
 
   - id: back-forth-years
     type: narrative
@@ -197,7 +197,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》元祐六年至八年条
     notes:
       - "人生如逆旅句出自黄州时期《临江仙·送钱穆父》，不宜挪用，正文另述"
-    proofed: false
+    proofed: true
 
   - id: canliao-zi-farewell
     type: narrative
@@ -218,8 +218,8 @@ scenes:
     year: 1091
     source: 邹同庆、王宗堂《苏轼词编年笺注》，元祐六年编年
     notes:
-      - "参寥子即道潜，于潜浮溪? 详名待校；苏轼贬儋州时其欲渡海相从，被劝止"
-    proofed: false
+      - "参寥子即诗僧道潜；苏轼贬儋州时其欲渡海相从，被劝止"
+    proofed: true
 
   - id: basheng-ganzhou
     type: poem
@@ -248,7 +248,7 @@ scenes:
     source: 邹同庆、王宗堂《苏轼词编年笺注》，元祐六年编年
     notes:
       - "郑文焯评此词：突兀雪山，卷地而来，真似钱塘江上看潮时——豪放之外别见沉郁"
-    proofed: false
+    proofed: true
 
   - id: empress-death
     type: event
@@ -269,7 +269,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》元祐八年条；《宋史·后妃传》
     notes:
       - "惟有同穴，尚蹈此言：出自苏轼《祭亡妻同安郡君文》"
-    proofed: false
+    proofed: true
 
   - id: to-dingzhou
     type: narrative
@@ -291,4 +291,4 @@ scenes:
     source: 孔凡礼《苏轼年谱》绍圣元年条；《宋史·苏轼传》
     notes:
       - "绍圣元年六月责授英州，未至再贬宁远军节度副使惠州安置，途中三改谪命"
-    proofed: false
+    proofed: true

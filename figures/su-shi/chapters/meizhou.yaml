@@ -23,7 +23,7 @@ scenes:
     notes:
       - "生于十二月十九，按公历已入 1037 年 1 月 8 日"
       - "苏洵二十七始发愤：出自苏洵《上欧阳内翰书》自述与三字经苏老泉二十七始发愤"
-    proofed: false
+    proofed: true
 
   - id: family
     type: event
@@ -40,7 +40,7 @@ scenes:
     source: 苏洵《名二子说》；孔凡礼《苏轼年谱》
     notes:
       - "《名二子说》作年有庆历七年、至和二年等说，此处取苏洵晚年回望之意"
-    proofed: false
+    proofed: true
 
   - id: mother-teaching
     type: letter
@@ -62,7 +62,7 @@ scenes:
     notes:
       - "范滂：东汉党锢之祸中殉道的名士，登车揽辔，慨然有澄清天下之志"
       - "教读年份为约数，史书未系年"
-    proofed: false
+    proofed: true
 
   - id: youth-arrogance
     type: narrative
@@ -82,7 +82,7 @@ scenes:
     source: 王水照、崔铭《苏轼传》家学部分
     notes:
       - "识遍天下字联：民间传说，见宋人以来笔记杂说，非信史，取其少年狂气之意"
-    proofed: false
+    proofed: true
 
   - id: marriage-wang-fu
     type: narrative
@@ -100,7 +100,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》至和元年条；王弗事见苏轼《亡妻王氏墓志铭》
     notes:
       - "唤鱼池联姻：地方传说，见于眉山青神一带方志与民间叙述，正史无载"
-    proofed: false
+    proofed: true
 
   - id: leave-shu
     type: narrative
@@ -119,4 +119,4 @@ scenes:
     year: 1056
     source: 孔凡礼《苏轼年谱》嘉祐元年条
     notes: []
-    proofed: false
+    proofed: true

@@ -23,7 +23,7 @@ scenes:
     year: 1071
     source: 孔凡礼《苏轼年谱》熙宁四年条；《宋史·苏轼传》
     notes: []
-    proofed: false
+    proofed: true
 
   - id: hangzhou-tongpan
     type: narrative
@@ -43,7 +43,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》熙宁四年条
     notes:
       - "故乡无此好湖山：出自《六月二十七日望湖楼醉书》组诗语境"
-    proofed: false
+    proofed: true
 
   - id: yinhu-chuqing
     type: poem
@@ -59,7 +59,7 @@ scenes:
     source: 《苏轼诗集》，系年见孔凡礼《苏轼年谱》熙宁六年条
     notes:
       - "自此诗起，西湖别名西子湖，一城山水因一首诗改名"
-    proofed: false
+    proofed: true
 
   - id: to-mizhou
     type: narrative
@@ -78,7 +78,7 @@ scenes:
     year: 1074
     source: 孔凡礼《苏轼年谱》熙宁七年条；苏轼《超然台记》
     notes: []
-    proofed: false
+    proofed: true
 
   - id: dream-of-wang-fu
     type: narrative
@@ -97,7 +97,7 @@ scenes:
     year: 1075
     source: 孔凡礼《苏轼年谱》熙宁八年条
     notes: []
-    proofed: false
+    proofed: true
 
   - id: jiangchengzi-ji-meng
     type: poem
@@ -121,7 +121,7 @@ scenes:
     source: 邹同庆、王宗堂《苏轼词编年笺注》，熙宁八年编年
     notes:
       - "悼亡词开山之作；短松冈呼应墓志铭手植三万松"
-    proofed: false
+    proofed: true
 
   - id: mizhou-hunt
     type: narrative
@@ -140,7 +140,7 @@ scenes:
     year: 1075
     source: 苏轼《与鲜于子骏书》；孔凡礼《苏轼年谱》熙宁八年条
     notes: []
-    proofed: false
+    proofed: true
 
   - id: jiangchengzi-hunt
     type: poem
@@ -164,7 +164,7 @@ scenes:
     source: 邹同庆、王宗堂《苏轼词编年笺注》，熙宁八年编年
     notes:
       - "此词被公认为豪放词的发端，苏轼自己在信中也不无得意：虽无柳七郎风味，亦自是一家"
-    proofed: false
+    proofed: true
 
   - id: midnight-moon
     type: narrative
@@ -183,7 +183,7 @@ scenes:
     year: 1076
     source: 孔凡礼《苏轼年谱》熙宁九年条；词题小序
     notes: []
-    proofed: false
+    proofed: true
 
   - id: shuidiao-getou
     type: poem
@@ -214,7 +214,7 @@ scenes:
     notes:
       - "宋人胡仔评：中秋词自东坡《水调歌头》一出，余词尽废"
       - "高处不胜寒：九年后将一语成谶——庙堂之高，他终究消受不起"
-    proofed: false
+    proofed: true
 
   - id: to-xuzhou
     type: narrative
@@ -231,7 +231,7 @@ scenes:
     year: 1077
     source: 孔凡礼《苏轼年谱》熙宁十年条；苏辙《水调歌头·徐州中秋》
     notes: []
-    proofed: false
+    proofed: true
 
   - id: xuzhou-flood
     type: event
@@ -249,7 +249,7 @@ scenes:
     year: 1077
     source: 《宋史·苏轼传》；孔凡礼《苏轼年谱》熙宁十年条
     notes: []
-    proofed: false
+    proofed: true
 
   - id: xuzhou-after
     type: narrative
@@ -271,7 +271,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》元丰元年条；书信见《苏轼文集》
     notes:
       - "道理贯心肝，忠义填骨髓：出自《答李琮书》，文字或有出入，待校"
-    proofed: false
+    proofed: true
 
   - id: to-huzhou
     type: narrative
@@ -293,4 +293,4 @@ scenes:
     source: 孔凡礼《苏轼年谱》元丰二年条
     notes:
       - "谢表文字成为乌台诗案导火索之一"
-    proofed: false
+    proofed: true

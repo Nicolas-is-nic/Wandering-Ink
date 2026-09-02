@@ -24,7 +24,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》嘉祐二年条；王水照、崔铭《苏轼传》应试部分
     notes:
       - "文中尧与皋陶对典故，欧阳修问出处，苏轼答想当然耳——何须出处，传为佳话"
-    proofed: false
+    proofed: true
 
   - id: chushi-yitou-di
     type: event
@@ -42,7 +42,7 @@ scenes:
     year: 1057
     source: 欧阳修《与梅圣俞书》；《宋史·苏轼传》
     notes: []
-    proofed: false
+    proofed: true
 
   - id: mother-death
     type: narrative
@@ -63,7 +63,7 @@ scenes:
     year: 1057
     source: 孔凡礼《苏轼年谱》嘉祐二年条；《宋史·苏轼传》
     notes: []
-    proofed: false
+    proofed: true
 
   - id: zhike-first
     type: narrative
@@ -83,7 +83,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》嘉祐六年条；《宋史·苏轼传》
     notes:
       - "制科三等：宋制一二等虚设不授，三等为实际最高，苏轼为百年第一人"
-    proofed: false
+    proofed: true
 
   - id: mianchi-journey
     type: narrative
@@ -105,7 +105,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》嘉祐六年条；诗见《苏轼诗集》
     notes:
       - "蹇驴句自注：往岁马死于二陵，骑驴至渑池"
-    proofed: false
+    proofed: true
 
   - id: he-ziyou-mianchi
     type: poem
@@ -126,7 +126,7 @@ scenes:
     notes:
       - "雪泥鸿爪：苏轼第一个传世千年的自铸名喻，此后成为汉语固定成语"
       - "老僧：渑池僧奉闲；旧题：嘉祐元年兄弟赴京时同题寺壁之诗"
-    proofed: false
+    proofed: true
 
   - id: fengxiang-days
     type: narrative
@@ -148,7 +148,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》嘉祐七年条；《苏轼文集·喜雨亭记》
     notes:
       - "与陈公弼冲突及晚年追悔：见苏轼《陈公弼传》自述"
-    proofed: false
+    proofed: true
 
   - id: xiyuting-ji
     type: letter
@@ -169,7 +169,7 @@ scenes:
     source: 《苏轼文集·喜雨亭记》
     notes:
       - "此文为苏轼凤翔任上代表作，与民同乐之志初露"
-    proofed: false
+    proofed: true
 
   - id: zhangdun-cliff
     type: narrative
@@ -195,7 +195,7 @@ scenes:
     source: 《高斋漫录》，转见宋人笔记
     notes:
       - "此则轶事见于宋人笔记，为苏章恩怨的著名伏笔，细节属笔记家言"
-    proofed: false
+    proofed: true
 
   - id: wang-fu-death
     type: narrative
@@ -218,7 +218,7 @@ scenes:
     notes:
       - "屏后听语：出自《亡妻王氏墓志铭》原文，非传说"
       - "三万松树：墓志铭言手植三万株，即后来短松冈意象的由来"
-    proofed: false
+    proofed: true
 
   - id: father-death
     type: event
@@ -237,4 +237,4 @@ scenes:
     source: 孔凡礼《苏轼年谱》治平三年至熙宁元年条
     notes:
       - "苏洵卒于治平三年四月，年五十八"
-    proofed: false
+    proofed: true

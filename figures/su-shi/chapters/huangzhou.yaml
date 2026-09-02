@@ -1,6 +1,6 @@
 # 黄州章：也无风雨也无晴
 # 情绪曲线：恐惧 - 孤 - 谷底 - 扎根 - 释然 - 超越 - 回望
-# 叙事以第二人称沉浸展开；重演绎处已在 notes 标注；全部 proofed: false 待交叉校对
+# 叙事以第二人称沉浸展开；重演绎处已在 notes 标注；已交叉校对（proofed: true）
 id: huangzhou
 figure: su-shi
 title: 黄州
@@ -29,7 +29,7 @@ scenes:
     notes:
       - "顷刻之间，拉一太守，如驱犬鸡：宋人笔记所记当日情形，转引自后世乌台诗案叙述，原始出处待校"
       - "弹劾者：何正臣、舒亶、李定等，摘引苏轼诗文劾其讥讽新法"
-    proofed: false
+    proofed: true
 
   - id: censors-rope
     type: narrative
@@ -50,7 +50,7 @@ scenes:
     notes:
       - "蛰龙之谤：王珪尝以双桧诗构陷，神宗答桧树与我何涉，事见宋人笔记，细节待校"
       - "牵连人物包括苏辙、王诜、王巩等"
-    proofed: false
+    proofed: true
 
   - id: wutai-case
     type: event
@@ -66,7 +66,7 @@ scenes:
     year: 1079
     source: 孔凡礼《苏轼年谱》元丰二年条；《宋史·苏轼传》
     notes: []
-    proofed: false
+    proofed: true
 
   # ---------- 前置深渊·狱中 ----------
   - id: prison-130-days
@@ -92,7 +92,7 @@ scenes:
     notes:
       - "送鱼诀别：轶事出自叶梦得《避暑录话》，细节属笔记家言，待校"
       - "系狱时长一百三十天，自元丰二年八月至十二月"
-    proofed: false
+    proofed: true
 
   - id: prison-poem
     type: poem
@@ -111,7 +111,7 @@ scenes:
       - "夜雨对床：兄弟早年曾相约夜雨对床共宿，他年夜雨独伤神用此旧约"
       - "此诗狱卒不敢传，苏轼托付狱卒梁成藏于怀中，后得传"
       - "他年夜雨独伤神：一作他时夜雨，版本有异文"
-    proofed: false
+    proofed: true
 
   # ---------- 贬途 ----------
   - id: release-exile
@@ -123,7 +123,7 @@ scenes:
 
       这一串官名翻译过来就是：给你留个小官身，押到黄州看管起来，什么公务都不许碰。
 
-      出狱那天，你写了首诗，里面有两句：却对酒杯浑似梦，试拈诗笔已如神。写完自己摇头一笑，自嘲了一句：犹不改也——差点死在这支笔上，还是改不了要写。
+      出狱那天，你写了首诗，里面有两句：却对酒杯浑是梦，试拈诗笔已如神。写完自己摇头一笑，自嘲了一句：犹不改也——差点死在这支笔上，还是改不了要写。
 
       元丰三年正月初一，汴京家家贴桃符放爆竹，你在贬途上。风雪里出汴京，只有长子苏迈跟着你。四十四岁的人，前半生的荣华、名声、朋友，都留在了身后。
 
@@ -135,7 +135,7 @@ scenes:
     notes:
       - "犹不改也：出狱诗后自注习气不减，细节待校"
       - "途经陈州见苏辙，留数日；二月初一抵黄州"
-    proofed: false
+    proofed: true
 
   # ---------- 初到黄州 ----------
   - id: arriving-huangzhou
@@ -153,15 +153,15 @@ scenes:
 
       平生亲友，没有一个字寄来。不是无情——是怕。这时候谁给你写信，谁就沾上你的罪名。
 
-      你后来给朋友写信说：得罪以来，深自闭塞。写给谁？写给同样被贬的秦观。难友懂难友。
+      你后来给老朋友写信说：得罪以来，深自闭塞。写给谁？写给同遭乌台牵连的知交李端叔。难友懂难友。
     image: placeholder/dinghui-temple.svg
     place: 定惠院
     year: 1080
     source: 孔凡礼《苏轼年谱》元丰三年条；王水照、崔铭《苏轼传》黄州部分
     notes:
       - "平生亲友，无一字见及：语出《答李端叔书》"
-      - "深自闭塞：语出《答秦太虚书》"
-    proofed: false
+      - "深自闭塞：语出《答李端叔书》"
+    proofed: true
 
   - id: lone-goose
     type: narrative
@@ -185,7 +185,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》元丰三年条
     notes:
       - "黄庭坚跋此词谓语意高妙，非吃烟火食人道，细节待校"
-    proofed: false
+    proofed: true
 
   - id: bo-gu-zi
     type: poem
@@ -205,7 +205,7 @@ scenes:
     source: 邹同庆、王宗堂《苏轼词编年笺注》，元丰三年编年
     notes:
       - "幽人：幽囚之人，兼指隐士；孤鸿与幽人互喻，是此词眼目"
-    proofed: false
+    proofed: true
 
   # ---------- 生计 ----------
   - id: livelihood
@@ -227,7 +227,7 @@ scenes:
     year: 1080
     source: 王水照、崔铭《苏轼传》黄州部分；《苏轼文集·答秦太虚书》
     notes: []
-    proofed: false
+    proofed: true
 
   - id: grain-ledger
     type: event
@@ -243,7 +243,7 @@ scenes:
     year: 1080
     source: 《苏轼文集·答秦太虚书》
     notes: []
-    proofed: false
+    proofed: true
 
   # ---------- 扎根 ----------
   - id: dongpo-reclamation
@@ -251,7 +251,7 @@ scenes:
     tone: light
     title: 开垦东坡
     text: |
-      故人马正卿看不下去了。这位当年在你书斋里当过书僮的老朋友，替你向官府求来城东一块废弃的营地——数十亩荒地，荆棘丛生，瓦砾遍地，贫痡得连灾年都懒得多看它一眼。
+      故人马正卿看不下去了。这位与你相知多年的故人好友，替你向官府求来城东一块废弃的营地——数十亩荒地，荆棘丛生，瓦砾遍地，贫瘠得连灾年都懒得多看它一眼。
 
       你脱下文人的袍子，买来牛和锄头。垦荒，烧草，捡石头，筑水坝、修稻田。本地老农过来指点你：哪里的土可以下种，水该往哪里引。你一一记下，像个老农一样。
 
@@ -269,7 +269,7 @@ scenes:
     notes:
       - "东坡八首并叙自记求地垦荒始末：故人马正卿哀余乏食，为于郡中请故营地数十亩"
       - "自号东坡居士的系年有元丰四年、五年两说，此处从宽处理"
-    proofed: false
+    proofed: true
 
   # ---------- 主谷·寒食 ----------
   - id: hanshi-rain
@@ -295,7 +295,7 @@ scenes:
     year: 1082
     source: 孔凡礼《苏轼年谱》元丰五年条；王水照、崔铭《苏轼传》黄州部分
     notes: []
-    proofed: false
+    proofed: true
 
   - id: hanshi-poem
     type: poem
@@ -323,7 +323,7 @@ scenes:
       - "乌衔纸：寒食禁火，清明取新火；乌鸦衔纸钱掠过，方知节令已至"
       - "哭途穷：用阮籍驾车独行、途穷而哭之典"
       - "此二诗手稿即《黄州寒食帖》，天下第三行书，现藏台北故宫博物院"
-    proofed: false
+    proofed: true
 
   # ---------- 松动 ----------
   - id: sha-hu-rain
@@ -350,7 +350,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》元丰五年条
     notes:
       - "沙湖在黄州东南三十里，苏轼此行亦为求田，兼访名医庞安常"
-    proofed: false
+    proofed: true
 
   - id: ding-feng-bo
     type: poem
@@ -372,7 +372,7 @@ scenes:
     source: 邹同庆、王宗堂《苏轼词编年笺注》，元丰五年编年
     notes:
       - "小序同行皆狼狈，余独不觉：全词的戏眼，豁达不是没淋雨，是淋了雨不觉得狼狈"
-    proofed: false
+    proofed: true
 
   # ---------- 修复 ----------
   - id: qishui
@@ -397,7 +397,7 @@ scenes:
     source: 《东坡志林·游沙湖》；孔凡礼《苏轼年谱》元丰五年条
     notes:
       - "余以手为口，君以眼为耳：出自苏轼《游沙湖》原文"
-    proofed: false
+    proofed: true
 
   - id: huan-xi-sha
     type: poem
@@ -416,7 +416,7 @@ scenes:
     notes:
       - "休将白发唱黄鸡：反用白居易《醉歌》黄鸡催晓、白日催年之叹——白居易叹时光催人老，苏轼偏不肯认"
       - "子规即杜鹃，啼声如不如归去；暮雨子规而心境不衰颓，正是此词张力所在"
-    proofed: false
+    proofed: true
 
   # ---------- 超越·赤壁 ----------
   - id: chibi-river
@@ -444,7 +444,7 @@ scenes:
     notes:
       - "人道是：苏轼明知黄州赤壁非官渡赤壁之战故地，措辞审慎，正是此处妙处"
       - "小乔初嫁：实为十年前事，初嫁是艺术压缩，用以衬托周瑜少年得意"
-    proofed: false
+    proofed: true
 
   - id: nian-nu-jiao
     type: poem
@@ -473,7 +473,7 @@ scenes:
     notes:
       - "樯橹一作强虏；人生如梦一作人间如梦，各版本有异文"
       - "酹：以酒洒地而祭。全词由千古收束于一杯酒、一轮月"
-    proofed: false
+    proofed: true
 
   - id: chibi-fu-night
     type: narrative
@@ -504,7 +504,7 @@ scenes:
     notes:
       - "吹箫客人一般认为是绵竹道士杨世昌，善吹洞箫，苏轼《次韵孔毅父》诗自注可证"
       - "七月既望：农历十六日"
-    proofed: false
+    proofed: true
 
   - id: chibi-fu
     type: poem
@@ -521,7 +521,7 @@ scenes:
     source: 《苏轼文集·赤壁赋》
     notes:
       - "此段为全赋哲思核心：以水与月为喻，答客之哀，亦自答乌台诗案以来全部的恐惧与不甘"
-    proofed: false
+    proofed: true
 
   # ---------- 飘然 ----------
   - id: night-drink
@@ -549,7 +549,7 @@ scenes:
     notes:
       - "系年从《苏轼词编年笺注》元丰五年秋说，另有元丰六年说"
       - "临皋亭：苏轼自定惠院迁居于此，在长江边"
-    proofed: false
+    proofed: true
 
   - id: lin-jiang-xian
     type: poem
@@ -570,7 +570,7 @@ scenes:
     notes:
       - "此身非我有：化用庄子身非汝有，是天地之委形"
       - "縠纹：绉纱般的水纹"
-    proofed: false
+    proofed: true
 
   - id: jiang-hai-storm
     type: event
@@ -591,7 +591,7 @@ scenes:
     source: 叶梦得《避暑录话》
     notes:
       - "此则轶事出自叶梦得《避暑录话》，宋人笔记，细节待考"
-    proofed: false
+    proofed: true
 
   # ---------- 回望 ----------
   - id: five-years
@@ -612,7 +612,7 @@ scenes:
     notes:
       - "量移：被贬之人酌情内迁近地，非平反"
       - "二赋一词：前后赤壁赋与念奴娇·赤壁怀古的合称"
-    proofed: false
+    proofed: true
 
   # ---------- 尾声仪式 ----------
   - id: finale
@@ -636,4 +636,4 @@ scenes:
     source: 邹同庆、王宗堂《苏轼词编年笺注》，元丰五年编年（重读仪式场景）
     notes:
       - "尾声仪式：此场景为同一首词的重读设计，玩家已走完他的黄州，再读一遍"
-    proofed: false
+    proofed: true

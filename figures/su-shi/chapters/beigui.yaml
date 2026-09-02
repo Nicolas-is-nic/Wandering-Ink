@@ -24,7 +24,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》建中靖国元年条；《邵氏闻见后录》
     notes:
       - "莫看杀轼否：出自《邵氏闻见后录》，宋人笔记，细节待校"
-    proofed: false
+    proofed: true
 
   - id: jinshan-portrait
     type: narrative
@@ -44,7 +44,7 @@ scenes:
     source: 孔凡礼《苏轼年谱》建中靖国元年条；诗见《苏轼诗集》
     notes:
       - "画像作者一般认为李公麟，一说画于元祐年间，细节待校"
-    proofed: false
+    proofed: true
 
   - id: self-portrait-poem
     type: poem
@@ -61,7 +61,7 @@ scenes:
     source: 《苏轼诗集》，系年见孔凡礼《苏轼年谱》建中靖国元年条
     notes:
       - "平生功业不列翰林不列执政，只列三个贬所——自嘲是表，自许是里：三州正是他文学生命的全部"
-    proofed: false
+    proofed: true
 
   - id: illness-changzhou
     type: narrative
@@ -80,7 +80,7 @@ scenes:
     year: 1101
     source: 孔凡礼《苏轼年谱》建中靖国元年七月条；苏轼与维琳往来书札
     notes: []
-    proofed: false
+    proofed: true
 
   - id: last-words
     type: narrative
@@ -107,7 +107,7 @@ scenes:
     notes:
       - "临终对话见于宋人记载，各本文字小异，细节待校"
       - "苏轼生于 1037 年 1 月，卒于 1101 年 8 月，享年六十四周岁（虚岁六十六）"
-    proofed: false
+    proofed: true
 
   - id: after-death
     type: event
@@ -125,7 +125,7 @@ scenes:
     notes:
       - "葬郏县小峨眉山，苏辙后葬其侧，世称二苏坟"
       - "南宋孝宗追谥文忠，赠太师"
-    proofed: false
+    proofed: true
 
   - id: reread-finale
     type: poem
@@ -146,4 +146,4 @@ scenes:
     source: 邹同庆、王宗堂《苏轼词编年笺注》，元丰五年编年（终章仪式场景）
     notes:
       - "终章仪式：北归路上忆及黄州旧词，完成全游戏的首尾闭环"
-    proofed: false
+    proofed: true

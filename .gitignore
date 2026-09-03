@@ -3,7 +3,9 @@
 __pycache__/
 *.pyc
 
-# 构建产物目录 docs/ 由构建生成，但需要跟踪（GitHub Pages 从 main:/docs 部署）
+# 构建产物（部署走 gh-pages 分支，见 scripts/deploy.sh）
+dist/
+.gh-pages-work/
 
 # 临时文档与脚本（AI 协作产物，不入库）
 claude_docs/

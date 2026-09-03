@@ -2,7 +2,7 @@
 
 纯叙事沉浸式 Web 游戏：以一生为卷轴，跟随历史文人走过关键人生节点，在处境中遇见诗词。首发内容为「苏轼 · 黄州」一章。
 
-设计文档见 `claude_docs/2026-09-02-诗词行旅-设计文档.md`。
+设计文档见 `claude_dist/2026-09-02-诗词行旅-设计文档.md`。
 
 ## 快速开始
 
@@ -33,7 +33,7 @@ build/build.py           构建脚本：schema 强校验 + 渲染 + 校对清单
 site/templates/          页面骨架模板（首页 / 人物页 / 章节页）
 site/css/ site/js/       美学 token 与交互（零依赖，无框架）
 dist/                    构建产物（纯静态，可直接托管）
-claude_docs/             设计文档
+claude_dist/             设计文档
 ```
 
 ## 构建产物
@@ -57,7 +57,7 @@ claude_docs/             设计文档
 
 ## 校对工作流
 
-1. 构建产出 `dist/proof-list.md`（当前 92 条已全部校对，2026-09-02 交叉校对报告见 `claude_docs/`）。
+1. 构建产出 `dist/proof-list.md`（当前 92 条已全部校对，2026-09-02 交叉校对报告见 `claude_dist/`）。
 2. 校对核对诗词原文逐字、系年、叙事史实，修正后回填 YAML 并置 `proofed: true`。
 3. 后续新增内容默认 `proofed: false`，须先交叉校对再发布。
 

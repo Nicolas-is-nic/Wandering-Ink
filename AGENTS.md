@@ -6,7 +6,7 @@
 
 技术形态：多人物数据包框架（`figures/`）+ Python 构建脚本（`build/build.py`，负责 schema 强校验与渲染）→ 零依赖静态站（`dist/`）。人物页足迹地图为自绘 SVG 水墨卷轴。
 
-设计文档（唯一权威 spec）：`claude_docs/2026-09-02-诗词行旅-设计文档.md`。
+设计文档（唯一权威 spec）：`claude_dist/2026-09-02-诗词行旅-设计文档.md`。
 
 ## 常用命令
 
@@ -74,6 +74,6 @@ uv pip install --python .venv/bin/python pyyaml
 ### 7. 工作流约定
 
 - Python 一律走 uv 全新环境（`.venv`），任何 pip 操作前确认目标环境。
-- `claude_docs/`、`claude_scripts/`、`dist/` 不入 git；代码文件英文命名，生成文档中文命名，代码注释中文，禁止 emoji。
+- `claude_dist/`、`claude_scripts/`、`dist/` 不入 git；代码文件英文命名，生成文档中文命名，代码注释中文，禁止 emoji。
 - 图片占位以 `placeholder/` 前缀，构建自动生成水墨风占位 SVG；真实插画按设计文档 3.4 节风格模板（四色、水墨淡彩、大量留白、无文字）批量生成后替换并更新 `placeholder-list.md`。
 - 任何内容/模板/脚本改动后：重新构建 → 检查 HTML 标签配对 → 抽查页面关键内容 → 确认校对清单更新。改文案必须重跑构建，不要手改 dist。

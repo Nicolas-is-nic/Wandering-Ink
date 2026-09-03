@@ -1,0 +1,85 @@
+[
+  {
+    "id": "li-bai",
+    "name": "李白",
+    "courtesy_name": "太白",
+    "art_name": "青莲居士",
+    "born": 701,
+    "died": 762,
+    "one_liner": "唐代浪漫主义诗人，诗仙",
+    "status": "planned",
+    "chapters": []
+  },
+  {
+    "id": "su-shi",
+    "name": "苏轼",
+    "courtesy_name": "子瞻",
+    "art_name": "东坡居士",
+    "born": 1037,
+    "died": 1101,
+    "one_liner": "北宋文学家、书画家，唐宋八大家之一",
+    "status": "published",
+    "chapters": [
+      {
+        "id": "meizhou",
+        "title": "眉州",
+        "subtitle": "蜀中少年",
+        "era": "1037-1056",
+        "scene_count": 6
+      },
+      {
+        "id": "bianjing",
+        "title": "名动京师",
+        "subtitle": "雪泥鸿爪",
+        "era": "1056-1066",
+        "scene_count": 11
+      },
+      {
+        "id": "huanyou",
+        "title": "宦游",
+        "subtitle": "明月几时有",
+        "era": "1071-1079",
+        "scene_count": 14
+      },
+      {
+        "id": "huangzhou",
+        "title": "黄州",
+        "subtitle": "也无风雨也无晴",
+        "era": "1080-1084",
+        "scene_count": 27
+      },
+      {
+        "id": "yuanyou",
+        "title": "元祐",
+        "subtitle": "高处不胜寒",
+        "era": "1085-1093",
+        "scene_count": 14
+      },
+      {
+        "id": "linghai",
+        "title": "岭海",
+        "subtitle": "九死南荒",
+        "era": "1094-1100",
+        "scene_count": 13
+      },
+      {
+        "id": "beigui",
+        "title": "北归",
+        "subtitle": "身如不系之舟",
+        "era": "1100-1101",
+        "scene_count": 7
+      }
+    ]
+  },
+  {
+    "id": "xin-qiji",
+    "name": "辛弃疾",
+    "courtesy_name": "幼安",
+    "art_name": "稼轩居士",
+    "born": 1140,
+    "died": 1207,
+    "one_liner": "南宋豪放派词人，词中之龙",
+    "status": "planned",
+    "chapters": []
+  }
+]

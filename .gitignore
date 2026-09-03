@@ -3,8 +3,7 @@
 __pycache__/
 *.pyc
 
-# 构建产物（.venv/bin/python build/build.py 一键重建）
-dist/
+# 构建产物目录 docs/ 由构建生成，但需要跟踪（GitHub Pages 从 main:/docs 部署）
 
 # 临时文档与脚本（AI 协作产物，不入库）
 claude_docs/

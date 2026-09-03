@@ -9,7 +9,7 @@
     1. 扫描 figures/ 下全部人物包（metadata.yaml + chapters/*.yaml）
     2. 按 schema 强校验（出处必填、type/tone 枚举、places 坐标查询、poem 字段）
     3. 渲染 dist/ 静态站：首页、人物页、章节页（数据内联，file:// 可直接打开）
-    4. 产出校对清单 dist/proof-list.md 与占位图清单 dist/placeholder-list.md
+    4. 产出校对清单 docs/proof-list.md 与占位图清单 docs/placeholder-list.md
     5. 为 placeholder/ 前缀图片自动生成占位 SVG
 
 校验失败时列出全部错误并以非零码退出。
@@ -26,7 +26,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 FIGURES_DIR = ROOT / "figures"
 SITE_DIR = ROOT / "site"
-DIST_DIR = ROOT / "dist"
+DIST_DIR = ROOT / "docs"  # GitHub Pages 从 main 分支 /docs 目录部署
 ASSETS_DIR = DIST_DIR / "assets"
 
 SCENE_TYPES = {"narrative", "poem", "event", "letter"}

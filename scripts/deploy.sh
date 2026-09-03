@@ -4,7 +4,7 @@
 # 前置：uv 环境已初始化（.venv 可用），SSH 可访问 GitHub
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GHP="$ROOT/.gh-pages-work"
 REMOTE="git@github.com:Nicolas-is-nic/Wandering-Ink.git"
 

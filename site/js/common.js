@@ -122,7 +122,37 @@
       if (back) el.classList.add("leaving-back");
       el.classList.add("active");
       ensureVisible(el);
-      el.scrollTop = 0;             // 翻页后回到页顶
+      // 翻页后回到页顶：WebKit 恢复 display:none 期间保留滚动位置的时机不固定
+      // （可能晚于元素首次完整布局），单次赋值和短窗口监听都可能漏掉。
+      // 方案：overflow:hidden 归零 + 1.2 秒内每 100ms 轮询强制归零；
+      // 期间用户主动操作（滚轮/触摸/键盘）立即停止干预，不影响正常阅读
+      el.classList.add("scroll-reset");
+      el.scrollTop = 0;
+      requestAnimationFrame(function () { requestAnimationFrame(function () { el.classList.remove("scroll-reset"); }); });
+      var deadline = Date.now() + 2500;
+      var userActed = false;
+      // 用户主动滚动立即放行；翻页键不算滚动意图（否则翻页那一下会误停归零轮询）。
+      // 注意必须挂 document：键盘事件路径不含页面容器，挂容器上收不到
+      var markUser = function (e) {
+        if (e.type === "keydown") {
+          var k = e.key;
+          if (k === "ArrowRight" || k === "ArrowLeft" || k === "PageDown" || k === "PageUp") return;
+        }
+        userActed = true;
+      };
+      document.addEventListener("wheel", markUser, { passive: true });
+      document.addEventListener("touchstart", markUser, { passive: true });
+      document.addEventListener("keydown", markUser);
+      (function patrol() {
+        if (userActed || Date.now() >= deadline) {
+          document.removeEventListener("wheel", markUser);
+          document.removeEventListener("touchstart", markUser);
+          document.removeEventListener("keydown", markUser);
+          return;
+        }
+        if (el.scrollTop > 0) el.scrollTop = 0;
+        setTimeout(patrol, 100);
+      })();
       updateChrome();
       hidePop();
       var id = el.id || ("p" + current);

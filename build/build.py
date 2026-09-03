@@ -195,7 +195,7 @@ def rel_from(page_path: str, asset_rel: str) -> str:
     return posixpath.relpath(asset_rel, posixpath.dirname(page_path))
 
 
-def render_scene(sc: dict, page_path: str) -> str:
+def render_scene(sc: dict, page_path: str, fid: str) -> str:
     """渲染单个场景 section（静态 HTML，JS 仅负责淡入与浮签增强）"""
     stype = sc["type"]
     tone = sc.get("tone", "light")
@@ -205,7 +205,7 @@ def render_scene(sc: dict, page_path: str) -> str:
 
     img = sc.get("image")
     if img:
-        src = esc(rel_from(page_path, f"assets/{img}"))
+        src = esc(rel_from(page_path, f"assets/figures/{fid}/{img}"))
         parts.append(
             f'        <figure class="scene-img"><img src="{src}" alt="{esc(sc.get("title") or sc.get("poem_title"))} 占位插图" loading="lazy"></figure>'
         )
@@ -235,7 +235,7 @@ def render_scene(sc: dict, page_path: str) -> str:
             parts.append(f'        <div class="keyline"><span>{esc(sc["keyline"])}</span></div>')
         if sc.get("artifact"):
             if sc.get("artifact_image"):
-                asrc = esc(rel_from(page_path, f"assets/{sc['artifact_image']}"))
+                asrc = esc(rel_from(page_path, f"assets/figures/{fid}/{sc['artifact_image']}"))
                 parts.append(
                     f'        <figure class="artifact"><img src="{asrc}" alt="{esc(sc["artifact"])} 真迹（占位）" loading="lazy">'
                     f'<figcaption>{esc(sc["artifact"])} · 真迹（占位图）</figcaption></figure>'
@@ -392,7 +392,7 @@ def render_chapter_page(meta: dict, chapter: dict) -> str:
             ensure_placeholder(sc["image"], sc.get("title") or sc.get("poem_title", ""))
         if sc.get("artifact_image"):
             ensure_placeholder(sc["artifact_image"], sc.get("artifact", "真迹"))
-        sections.append(render_scene(sc, page_path))
+        sections.append(render_scene(sc, page_path, meta["id"]))
     body = "\n".join(sections)
     head = (
         f'    <header class="pager-page chapter-head">\n'
@@ -569,6 +569,11 @@ def main():
 
         fdir = DIST_DIR / "figures" / fid
         (fdir / "chapters").mkdir(parents=True, exist_ok=True)
+
+        # 人物包自有资源（真实插画等）拷入 dist/assets/figures/<fid>/
+        pkg_assets = pkg_dir / "assets"
+        if pkg_assets.exists():
+            shutil.copytree(pkg_assets, ASSETS_DIR / "figures" / fid, dirs_exist_ok=True)
 
         # 人物页数据：metadata + 章节摘要（地图 SVG 所需的路线也一并内联）
         route_nodes = []

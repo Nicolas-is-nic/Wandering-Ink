@@ -18,7 +18,7 @@ scenes:
       运河两岸，成千上万的人随船而行，只为看他一眼。六十四岁、须发皆白的一代文宗，是天下人心里的活传奇。他自嘲道：莫看杀轼否？
 
       这样的人，这样被天下人捧着看着，却已经是一个被朝廷除名、无官无职的白身。
-    image: placeholder/north-canal.svg
+    image: images/north-canal.jpg
     place: 常州
     year: 1101
     source: 孔凡礼《苏轼年谱》建中靖国元年条；《邵氏闻见后录》
@@ -38,7 +38,7 @@ scenes:
       他在自己的画像前站了很久。画里的人峨冠博带，画外的人形容枯槁。
 
       他提笔在画上题了一首六言诗，短短二十四字，是给自己的悼词，也是给一生的判词。写完搁笔，他的一生，已可交卷。
-    image: placeholder/jinshan-temple.svg
+    image: images/jinshan-temple.jpg
     place: 常州
     year: 1101
     source: 孔凡礼《苏轼年谱》建中靖国元年条；诗见《苏轼诗集》
@@ -75,7 +75,7 @@ scenes:
       老友维琳方丈从杭州赶来，陪他住在常州宅中，日夜不离。苏轼给他写信，还是那副口吻——语句已虚弱，字还是那个字。
 
       七月，病势沉重。他让三个儿子立在自己床前。
-    image: placeholder/illness.svg
+    image: images/illness.jpg
     place: 常州
     year: 1101
     source: 孔凡礼《苏轼年谱》建中靖国元年七月条；苏轼与维琳往来书札
@@ -100,7 +100,7 @@ scenes:
       说完，阖上眼。是日，卒于常州。
 
       着力即差——他一生随缘任运、自然而然，最后一口气，也不肯用力气去对抗。
-    image: placeholder/deathbed.svg
+    image: images/deathbed.jpg
     place: 常州
     year: 1101
     source: 《东坡纪年录》等宋人记载转述

@@ -22,7 +22,7 @@ scenes:
       你甚至来不及交代什么。妻子儿女追出来哭，满街百姓落泪。你换上囚衣，登车上路。你没有回头。
 
       你还不知道，这一走，会在牢里待上一百三十天；更不知道，你此生最好的文章，都将在这一劫之后写成。
-    image: placeholder/arrest-huzhou.svg
+    image: images/arrest-huzhou.jpg
     place: 湖州
     year: 1079
     source: 孔凡礼《苏轼年谱》元丰二年条；王水照、崔铭《苏轼传》乌台诗案部分
@@ -43,7 +43,7 @@ scenes:
       他们要的不只是你的命，还要证明你们这一整个朋友圈子，都在讥讪朝政。
 
       御史台自汉代遍植柏树，柏树上多乌鸦栖居，所以又称乌台。这桩案子，后世叫它：乌台诗案。
-    image: placeholder/censors.svg
+    image: images/censors.jpg
     place: 汴京
     year: 1079
     source: 王水照、崔铭《苏轼传》乌台诗案部分；《宋史·苏轼传》
@@ -85,7 +85,7 @@ scenes:
       你盯着那盘鱼，血一下子凉了。死期到了。
 
       你在黑暗里坐了很久，然后摸出纸笔，给弟弟子由写下绝命诗。写完，交给梁成，求他代为保存。
-    image: placeholder/prison.svg
+    image: images/prison.jpg
     place: 汴京
     year: 1079
     source: 王水照、崔铭《苏轼传》狱中部分
@@ -128,7 +128,7 @@ scenes:
       元丰三年正月初一，汴京家家贴桃符放爆竹，你在贬途上。风雪里出汴京，只有长子苏迈跟着你。四十四岁的人，前半生的荣华、名声、朋友，都留在了身后。
 
       这一路要走一个多月，只在陈州停下见了苏辙一面。兄弟俩都没敢想，下一次再见时彼此是什么光景。
-    image: placeholder/exile-road.svg
+    image: images/exile-road.jpg
     place: 汴京
     year: 1080
     source: 孔凡礼《苏轼年谱》元丰二年至三年条；《宋史·苏轼传》
@@ -154,7 +154,7 @@ scenes:
       平生亲友，没有一个字寄来。不是无情——是怕。这时候谁给你写信，谁就沾上你的罪名。
 
       你后来给老朋友写信说：得罪以来，深自闭塞。写给谁？写给同遭乌台牵连的知交李端叔。难友懂难友。
-    image: placeholder/dinghui-temple.svg
+    image: images/dinghui-temple.jpg
     place: 定惠院
     year: 1080
     source: 孔凡礼《苏轼年谱》元丰三年条；王水照、崔铭《苏轼传》黄州部分
@@ -179,7 +179,7 @@ scenes:
       你回屋，点灯，把这一夜写成一阕词。四十几个字，字字都是你自己。
 
       后来黄庭坚跋这阕词，说它语意高妙，像不食烟火人说的话。也有人惋叹：此词一出，其余咏雁之作皆可废。
-    image: placeholder/lone-goose.svg
+    image: images/lone-goose.jpg
     place: 定惠院
     year: 1080
     source: 孔凡礼《苏轼年谱》元丰三年条
@@ -222,7 +222,7 @@ scenes:
       米缸一天浅过一天，孩子们的饭量一天大过一天。最疼的不是自己饿，是看着一家人跟着你受苦。
 
       你决定痛自节俭。精打细算到什么程度？你给秦观的信里算了一笔账：每天开销不得超过一百五十钱。
-    image: placeholder/empty-purse.svg
+    image: images/empty-purse.jpg
     place: 黄州
     year: 1080
     source: 王水照、崔铭《苏轼传》黄州部分；《苏轼文集·答秦太虚书》
@@ -262,7 +262,7 @@ scenes:
       东坡居士。
 
       从此天下人记住的是这个号，而不是那个差点被杀掉的苏轼。
-    image: placeholder/dongpo-farm.svg
+    image: images/dongpo-farm.jpg
     place: 东坡
     year: 1081
     source: 《苏轼诗集·东坡八首并叙》；孔凡礼《苏轼年谱》元丰四年条
@@ -290,7 +290,7 @@ scenes:
       你想学阮籍，驾车走到穷途，大哭一场。可是心如死灰——吹，也吹不起来了。
 
       这是你到黄州的第三年。垦了东坡，盖了雪堂，以为已经站稳了。一场寒食雨，把你打回原形。
-    image: placeholder/cold-rain.svg
+    image: images/cold-rain.jpg
     place: 黄州
     year: 1082
     source: 孔凡礼《苏轼年谱》元丰五年条；王水照、崔铭《苏轼传》黄州部分
@@ -317,7 +317,7 @@ scenes:
     place: 黄州
     year: 1082
     artifact: 寒食帖
-    artifact_image: placeholder/hanshitie.svg
+    artifact_image: images/hanshitie.jpg
     source: 《苏轼诗集》，系年见孔凡礼《苏轼年谱》元丰五年条
     notes:
       - "乌衔纸：寒食禁火，清明取新火；乌鸦衔纸钱掠过，方知节令已至"
@@ -344,7 +344,7 @@ scenes:
       你站在春风里回头看刚才的来路：哪里有什么风雨，哪里又有什么晴天。
 
       多年以后你会明白，真正把你从寒食的雨里救出来的，不是后来时来运转的任何一天，而是这一场雨。雨里你写下一阕词，其中八个字——一蓑烟雨任平生——足以支撑一个人度过余生任何一场风雨。
-    image: placeholder/rain-road.svg
+    image: images/rain-road.jpg
     place: 沙湖
     year: 1082
     source: 孔凡礼《苏轼年谱》元丰五年条
@@ -391,7 +391,7 @@ scenes:
       天下的溪水都向东流，百川到海，一去不回，就像人的年华，只去不来。可眼前这条兰溪，居然是向西流的。
 
       水都能向西。谁说人生不能再少年？你大笑起来，笑自己前几日还满腹的死灰。
-    image: placeholder/qingshui-temple.svg
+    image: images/qingshui-temple.jpg
     place: 蕲水
     year: 1082
     source: 《东坡志林·游沙湖》；孔凡礼《苏轼年谱》元丰五年条
@@ -437,7 +437,7 @@ scenes:
       再想想自己。四十七岁，早生华发，功业未成，戴罪之身，困在这个江边小城。
 
       换一个人，此刻该怨天怨地。你却笑了，多情应笑我——笑自己还在这儿较劲。你把一杯酒，洒进江月里。
-    image: placeholder/chibi-cliff.svg
+    image: images/chibi-cliff.jpg
     place: 赤壁矶
     year: 1082
     source: 孔凡礼《苏轼年谱》元丰五年条；王水照、崔铭《苏轼传》赤壁部分
@@ -497,7 +497,7 @@ scenes:
       那还有什么可羡慕的？江上的清风，山间的明月，耳朵听到就是声，眼睛看到就是色，取之无禁，用之不竭。这是造物者无尽藏，你我此刻共享。
 
       客人笑了，洗干净杯子重新斟酒。主客在舟中睡去，不知东方之既白。
-    image: placeholder/river-moon.svg
+    image: images/river-moon.jpg
     place: 赤壁矶
     year: 1082
     source: 《苏轼文集·赤壁赋》；孔凡礼《苏轼年谱》元丰五年条
@@ -542,7 +542,7 @@ scenes:
       这身躯，是官家的、案牍的、毁谤的，几时真正属于过自己？真想乘一叶小舟，从此逝去，江海寄余生。
 
       你想完，站了一会儿，回屋倒头就睡。
-    image: placeholder/night-river.svg
+    image: images/night-river.jpg
     place: 临皋亭
     year: 1082
     source: 孔凡礼《苏轼年谱》元丰五年条；王水照、崔铭《苏轼传》黄州部分

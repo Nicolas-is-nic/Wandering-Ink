@@ -20,7 +20,7 @@ scenes:
       五天，又一纸：升起居舍人。
 
       命运把他从泥里拔起来，甩向云端。
-    image: placeholder/court-change.svg
+    image: images/court-change.jpg
     place: 汴京
     year: 1085
     source: 孔凡礼《苏轼年谱》元丰八年条；《宋史·苏轼传》
@@ -57,7 +57,7 @@ scenes:
       回家后气犹未消，连呼：司马牛！司马牛！
 
       当年反对新法，他是异类；如今维护免役法，他又成了旧党里的异类。两边的墙都不收留他——他这一生，只忠于该不该，不忠于哪一边。
-    image: placeholder/court-argue.svg
+    image: images/court-argue.jpg
     place: 汴京
     year: 1086
     source: 孔凡礼《苏轼年谱》元祐元年条；《铁围山丛谈》等宋人笔记
@@ -79,7 +79,7 @@ scenes:
       高太后还能保他。但他自己已经厌倦了：臣若贪恋富贵，不肯请求外放，天理不容。
 
       他又一次，自请外放。
-    image: placeholder/faction-court.svg
+    image: images/faction-court.jpg
     place: 汴京
     year: 1088
     source: 孔凡礼《苏轼年谱》元祐三年条；《宋史·苏轼传》
@@ -118,7 +118,7 @@ scenes:
       当年那个在湖上写诗的通判，如今要为这座城做点实事了。
 
       他做的第一件事，不是修堤，是救人。
-    image: placeholder/hangzhou-official.svg
+    image: images/hangzhou-official.jpg
     place: 杭州
     year: 1089
     source: 孔凡礼《苏轼年谱》元祐四年条；《宋史·苏轼传》
@@ -191,7 +191,7 @@ scenes:
       只是离京越远，他的心越静。他已经学会了在颠沛里安顿自己：每到一处，修一处湖，治一城民，把贬谪过成日常。
 
       风暴，还在后面。
-    image: placeholder/wandering-years.svg
+    image: images/wandering-years.jpg
     place: 颍州
     year: 1091
     source: 孔凡礼《苏轼年谱》元祐六年至八年条
@@ -213,7 +213,7 @@ scenes:
       他写了一阕长调赠别，其中两句像是提前预感了什么：约他年、东还海道，愿谢公、雅志莫相忘。
 
       此别之后，两人再见面，已是天涯贬所的岁月了。
-    image: placeholder/qiantang-tide.svg
+    image: images/qiantang-tide.jpg
     place: 杭州
     year: 1091
     source: 邹同庆、王宗堂《苏轼词编年笺注》，元祐六年编年
@@ -285,7 +285,7 @@ scenes:
       绍圣元年，贬命下来：撤销端明殿学士、翰林侍读学士称号，责降充左朝奉郎、知英州。未到任，途中再贬，一贬再贬。
 
       最后落定的地方，叫惠州。
-    image: placeholder/dingzhou-frontier.svg
+    image: images/dingzhou-frontier.jpg
     place: 定州
     year: 1094
     source: 孔凡礼《苏轼年谱》绍圣元年条；《宋史·苏轼传》

@@ -168,7 +168,9 @@ def make_placeholder_svg(title: str, subtitle: str = "占位图 · 后期以 AI 
 
 
 def ensure_placeholder(rel_path: str, title: str) -> Path:
-    """确保占位 SVG 存在，返回 dist 内绝对路径"""
+    """确保占位 SVG 存在，返回 dist 内绝对路径；非 placeholder/ 前缀的真实资产不生成"""
+    if not rel_path.startswith("placeholder/"):
+        return ASSETS_DIR / rel_path
     target = ASSETS_DIR / rel_path
     if not target.exists():
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -206,8 +208,10 @@ def render_scene(sc: dict, page_path: str, fid: str) -> str:
     img = sc.get("image")
     if img:
         src = esc(rel_from(page_path, f"assets/figures/{fid}/{img}"))
+        is_ph = img.startswith("placeholder/")
+        alt = f"{esc(sc.get('title') or sc.get('poem_title'))}{' 占位插图' if is_ph else ' 场景插画'}"
         parts.append(
-            f'        <figure class="scene-img"><img src="{src}" alt="{esc(sc.get("title") or sc.get("poem_title"))} 占位插图" loading="lazy"></figure>'
+            f'        <figure class="scene-img"><img src="{src}" alt="{alt}" loading="lazy"></figure>'
         )
 
     meta_bits = []
@@ -236,9 +240,11 @@ def render_scene(sc: dict, page_path: str, fid: str) -> str:
         if sc.get("artifact"):
             if sc.get("artifact_image"):
                 asrc = esc(rel_from(page_path, f"assets/figures/{fid}/{sc['artifact_image']}"))
+                is_ph = sc["artifact_image"].startswith("placeholder/")
+                cap = f'{esc(sc["artifact"])} · 真迹（占位图）' if is_ph else f'{esc(sc["artifact"])} · 真迹'
                 parts.append(
-                    f'        <figure class="artifact"><img src="{asrc}" alt="{esc(sc["artifact"])} 真迹（占位）" loading="lazy">'
-                    f'<figcaption>{esc(sc["artifact"])} · 真迹（占位图）</figcaption></figure>'
+                    f'        <figure class="artifact"><img src="{asrc}" alt="{cap}" loading="lazy">'
+                    f'<figcaption>{cap}</figcaption></figure>'
                 )
             else:
                 parts.append(f'        <p class="artifact-name">传世法帖：{esc(sc["artifact"])}</p>')
@@ -614,16 +620,22 @@ def main():
                 proof_scenes += 1
                 if sc["type"] == "poem":
                     poem_count += 1
-                if sc.get("image") or sc.get("artifact_image"):
-                    placeholder_files.append(sc.get("image") or sc.get("artifact_image"))
+                # 占位清单只登记 placeholder/ 前缀的图；真实资产不登记
+                if sc.get("image") and sc["image"].startswith("placeholder/"):
+                    placeholder_files.append(sc["image"])
+                if sc.get("artifact_image") and sc["artifact_image"].startswith("placeholder/"):
+                    placeholder_files.append(sc["artifact_image"])
 
     # ---- 占位清单 ----
-    (DIST_DIR / "placeholder-list.md").write_text(
-        "# 占位图清单\n\n以下图片为占位 SVG，后期按 3.4 节风格模板批量生成后，\n"
-        "放入 figures/<人物>/assets/ 对应路径并在 YAML 中改为非 placeholder/ 前缀路径。\n\n"
-        + "".join(f"- {p}\n" for p in placeholder_files),
-        encoding="utf-8",
-    )
+    if placeholder_files:
+        ph_content = (
+            "# 占位图清单\n\n以下图片为占位 SVG，后期按 3.4 节风格模板批量生成后，\n"
+            "放入 figures/<人物>/assets/ 对应路径并在 YAML 中改为非 placeholder/ 前缀路径。\n\n"
+            + "".join(f"- {p}\n" for p in placeholder_files)
+        )
+    else:
+        ph_content = "# 占位图清单\n\n当前无占位图，全部为真实资产。\n"
+    (DIST_DIR / "placeholder-list.md").write_text(ph_content, encoding="utf-8")
 
     # ---- 校对清单 ----
     (DIST_DIR / "proof-list.md").write_text(build_proof_list(proof_items), encoding="utf-8")

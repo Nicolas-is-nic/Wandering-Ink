@@ -304,6 +304,10 @@ body[data-page="figure"] .chapters-section { max-width: 680px; margin: 0 auto; p
 .popover.show { opacity: 1; transform: translateY(0); }
 .popover .pop-title { color: var(--cinnabar); font-family: var(--serif); margin-bottom: 4px; letter-spacing: 2px; }
 
+/* ---------- 足迹卷轴悬停：聚焦相关子图，其余置灰非隐藏 ---------- */
+.route-svg .node, .route-svg .edge { transition: opacity .25s; }
+.route-svg.dim .node:not(.hi), .route-svg.dim .edge:not(.hi) { opacity: .16; }
+
 /* ---------- 章节尾 ---------- */
 .chapter-end { text-align: center; padding: var(--s12) 0 var(--s8); }
 .end-line {
@@ -340,6 +344,10 @@ body[data-page="chapter"] .chapter-flow {
 }
 /* 动画兜底完成态：后台标签页动画不推进时由 JS 加此类强制可见 */
 .pager-page.active.anim-done { animation: none !important; opacity: 1; transform: none; }
+/* 翻页瞬间强制无滚动（overflow:hidden 时 scrollTop 恒为 0），下一帧恢复 auto */
+.pager-page.scroll-reset { overflow: hidden !important; }
+/* 禁用滚动锚定：防止内容布局完成时浏览器自行调整滚动位置 */
+.pager-page { overflow-anchor: none; }
 
 /* 翻页页面内边距（顶部留导航高度；scene 原上下大留白交由页面高度承担） */
 .js body[data-page="chapter"] .pager-page.active { padding: 88px 0 var(--s8); }

@@ -363,8 +363,7 @@ def render_figure_page(meta: dict, chapters: list) -> str:
         <span class="chapter-era">{esc(ch["era"])}</span>
         <h3 class="chapter-title">{esc(ch["title"])}</h3>
         <p class="chapter-subtitle">{esc(ch["subtitle"])}</p>
-        <span class="chapter-enter">
-          进入章末卷
+        <span class="chapter-enter" aria-label="进入本章">
           <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
         </span>
       </a>'''
@@ -389,7 +388,7 @@ def render_figure_page(meta: dict, chapters: list) -> str:
     )
 
 
-def render_chapter_page(meta: dict, chapter: dict) -> str:
+def render_chapter_page(meta: dict, chapter: dict, next_chapter: dict | None = None) -> str:
     """章节页：场景流（build 期渲染静态 HTML）"""
     page_path = f"figures/{meta['id']}/chapters/{chapter['id']}.html"
     sections = []
@@ -407,11 +406,18 @@ def render_chapter_page(meta: dict, chapter: dict) -> str:
         f'      <p class="chapter-bigsubtitle">{esc(chapter["subtitle"])}</p>\n'
         f"    </header>\n"
     )
+    next_html = ""
+    if next_chapter:
+        next_label = esc(next_chapter["title"])
+        if next_chapter.get("subtitle"):
+            next_label += f" · {esc(next_chapter['subtitle'])}"
+        next_html = f'      <a class="next-link" href="{esc(next_chapter["id"])}.html">进入下一章　{next_label} →</a>\n'
+    back_line = f'      <a class="back-link" href="../index.html">返回 {esc(meta["name"])} · 一生足迹</a>\n'
     tail = (
         '    <footer class="pager-page chapter-end">\n'
         '      <p class="end-line">卷终</p>\n'
-        f'      <a class="back-link" href="../index.html">返回 {esc(meta["name"])} · 一生足迹</a>\n'
-        "    </footer>\n"
+        + next_html + back_line +
+        '    </footer>\n'
     )
     return head + body + tail
 
@@ -604,13 +610,13 @@ def main():
             extra_js="assets/js/map.js",
         )
 
-        for chapter in chapters:
+        for ci, chapter in enumerate(chapters):
             chapter_data = {"page": "chapter", "figureName": meta["name"], "chapter": chapter}
             build_page(
                 template_chapter,
                 f"{chapter['title']} · {meta['name']} · 诗词行旅",
                 chapter.get("subtitle", ""), chapter_data,
-                render_chapter_page(meta, chapter),
+                render_chapter_page(meta, chapter, chapters[ci + 1] if ci + 1 < len(chapters) else None),
                 fdir / "chapters" / f"{chapter['id']}.html",
             )
             (data_dir / fid).mkdir(parents=True, exist_ok=True)

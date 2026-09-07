@@ -158,10 +158,11 @@ body[data-page="figure"] .chapters-section { max-width: 680px; margin: 0 auto; p
 .chapter-title { font-family: var(--serif); font-size: 30px; letter-spacing: 10px; margin-top: var(--s1); }
 .chapter-subtitle { font-family: var(--kai); font-size: 16px; color: var(--ink-soft); margin-top: var(--s1); }
 .chapter-enter {
-  display: inline-flex; align-items: center; gap: 6px; margin-top: var(--s3);
-  font-size: 13px; color: var(--cinnabar); letter-spacing: 2px;
+  display: inline-flex; align-items: center; margin-top: var(--s3);
+  color: var(--cinnabar);
 }
-.chapter-enter .icon { width: 12px; height: 12px; }
+.chapter-enter .icon { width: 14px; height: 14px; transition: transform .25s ease; }
+.chapter-card:hover .chapter-enter .icon { transform: translateX(3px); }
 
 /* ---------- 章节页：场景流 ---------- */
 .chapter-head { text-align: center; padding: var(--s8) 0 var(--s12); }
@@ -314,8 +315,15 @@ body[data-page="figure"] .chapters-section { max-width: 680px; margin: 0 auto; p
   font-family: var(--serif); font-size: 22px; letter-spacing: 16px; text-indent: 16px;
   color: var(--ink-soft);
 }
+.next-link {
+  display: block; width: fit-content; margin: var(--s4) auto 0;
+  font-family: var(--serif); font-size: 17px; color: var(--cinnabar);
+  text-decoration: none; letter-spacing: 4px;
+  border-bottom: 1px solid rgba(192, 57, 43, .45); padding-bottom: 3px;
+}
+.next-link:hover { color: var(--ink); border-color: var(--ink); }
 .back-link {
-  display: inline-block; margin-top: var(--s4);
+  display: block; width: fit-content; margin: var(--s4) auto 0;
   font-size: 14px; color: var(--indigo); text-decoration: none; letter-spacing: 2px;
   border-bottom: 1px solid rgba(44, 62, 80, .4); padding-bottom: 2px;
 }

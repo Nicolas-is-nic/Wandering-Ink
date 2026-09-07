@@ -7,8 +7,51 @@
     "born": 701,
     "died": 762,
     "one_liner": "唐代浪漫主义诗人，诗仙",
-    "status": "planned",
-    "chapters": []
+    "status": "published",
+    "chapters": [
+      {
+        "id": "shuzhong",
+        "title": "蜀中",
+        "subtitle": "少年与出蜀",
+        "era": "701-724",
+        "scene_count": 5
+      },
+      {
+        "id": "yuanyou",
+        "title": "远游",
+        "subtitle": "仗剑去国",
+        "era": "724-740",
+        "scene_count": 8
+      },
+      {
+        "id": "changan",
+        "title": "长安",
+        "subtitle": "待诏翰林",
+        "era": "742-744",
+        "scene_count": 5
+      },
+      {
+        "id": "manyou",
+        "title": "漫游",
+        "subtitle": "快意与忧思",
+        "era": "744-753",
+        "scene_count": 8
+      },
+      {
+        "id": "luanshi",
+        "title": "乱世",
+        "subtitle": "从仙到囚",
+        "era": "755-759",
+        "scene_count": 5
+      },
+      {
+        "id": "dangtu",
+        "title": "当涂",
+        "subtitle": "大鹏中摧",
+        "era": "761-762",
+        "scene_count": 4
+      }
+    ]
   },
   {
     "id": "su-shi",

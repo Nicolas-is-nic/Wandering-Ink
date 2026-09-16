@@ -1,4 +1,5 @@
-# 辛弃疾人物包（待生成占位，验证多人物框架）
+# 辛弃疾人物包元数据
+# 坐标为现代地名近似坐标（古今地名对照的锚点），用于 SVG 足迹卷轴投影
 id: xin-qiji
 name: 辛弃疾
 courtesy_name: 幼安
@@ -6,12 +7,53 @@ art_name: 稼轩居士
 born: 1140
 died: 1207
 one_liner: 南宋豪放派词人，词中之龙
-status: planned
-birthplace: 历城
-places:
+status: published            # 已过构建校验，进入交叉校对阶段；正式上线走 deploy.sh
+birthplace: 历城             # 山东济南四风闸
+
+places:                       # 古今地名对照表：全包唯一坐标源，scene 与 route 均按名引用
   历城: { lng: 117.02, lat: 36.68 }
-  临安: { lng: 120.16, lat: 30.25 }
-route:
-  - { place: 历城, year: 1140 }
-  - { place: 临安, year: 1162 }
+  谯县: { lng: 115.78, lat: 33.85 }
+  燕京: { lng: 116.40, lat: 39.90 }
+  泰安: { lng: 117.13, lat: 36.19 }
+  建康: { lng: 118.78, lat: 32.06 }
+  济州: { lng: 116.59, lat: 35.41 }
+  江阴: { lng: 120.28, lat: 31.91 }
+  临安: { lng: 120.16, lat: 30.29 }
+  滁州: { lng: 118.32, lat: 32.30 }
+  万安: { lng: 114.78, lat: 26.46 }
+  鄂州: { lng: 114.31, lat: 30.60 }
+  长沙: { lng: 112.94, lat: 28.23 }
+  上饶: { lng: 117.97, lat: 28.45 }
+  博山: { lng: 118.15, lat: 28.44 }
+  铅山: { lng: 117.71, lat: 28.32 }
+  福州: { lng: 119.30, lat: 26.08 }
+  绍兴: { lng: 120.58, lat: 30.03 }
+  镇江: { lng: 119.42, lat: 32.20 }
+
+route:                        # 足迹总览（人物页地图数据源），坐标经 places 查询
+  - { place: 历城, year: 1140, label: 生于历城 }
+  - { place: 谯县, year: 1150, label: 从刘瞻学 }
+  - { place: 燕京, year: 1157, label: 两观燕京 }
+  - { place: 历城, year: 1161, label: 聚众二千 }
+  - { place: 泰安, year: 1161, label: 追斩义端 }
+  - { place: 建康, year: 1162, label: 奉表归宋 }
+  - { place: 济州, year: 1162, label: 五十骑闯营 }
+  - { place: 江阴, year: 1162, label: 江阴签判 }
+  - { place: 江阴, year: 1165, label: 上美芹十论 }
+  - { place: 临安, year: 1170, label: 延和殿召对 }
+  - { place: 滁州, year: 1172, label: 知滁州 }
+  - { place: 建康, year: 1174, label: 登赏心亭 }
+  - { place: 万安, year: 1176, label: 书造口壁 }
+  - { place: 鄂州, year: 1179, label: 小山亭赋词 }
+  - { place: 长沙, year: 1180, label: 创飞虎军 }
+  - { place: 上饶, year: 1182, label: 归耕带湖 }
+  - { place: 博山, year: 1188, label: 道中书壁 }
+  - { place: 铅山, year: 1188, label: 鹅湖之会 }
+  - { place: 福州, year: 1194, label: 再起再罢 }
+  - { place: 铅山, year: 1196, label: 徙居瓢泉 }
+  - { place: 绍兴, year: 1203, label: 六十四岁再起 }
+  - { place: 镇江, year: 1204, label: 北固亭北望 }
+  - { place: 铅山, year: 1205, label: 奉祠归瓢泉 }
+  - { place: 铅山, year: 1207, label: 病卒瓢泉 }
+
 chapters_ref: chapters/

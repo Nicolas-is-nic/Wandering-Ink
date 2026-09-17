@@ -32,6 +32,7 @@ ASSETS_DIR = DIST_DIR / "assets"
 SCENE_TYPES = {"narrative", "poem", "event", "letter"}
 TONES = {"light", "dark"}
 STATUSES = {"published", "planned"}
+DYNASTY_ORDER = ["唐", "宋", "元", "明", "清"]   # 首页朝代分组排序表；新增朝代时扩展
 
 errors = []       # 致命错误：构建失败
 warnings = []     # 警告：不阻断构建
@@ -74,6 +75,9 @@ def validate_metadata(meta: dict, pkg_dir: Path):
     for key in ("name", "one_liner", "born", "died"):
         if key not in meta:
             err(f"{pkg_dir}: metadata 缺少 {key}")
+    dynasty = meta.get("dynasty", "")
+    if dynasty not in DYNASTY_ORDER:
+        err(f"{pkg_dir}: dynasty 非法（{dynasty or '缺失'}），仅允许 {DYNASTY_ORDER}")
     places = meta.get("places") or {}
     for name, coord in places.items():
         if not (isinstance(coord, dict) and "lng" in coord and "lat" in coord):
@@ -301,35 +305,50 @@ def build_page(template: str, title: str, description: str, page_data: dict,
 
 
 def render_home(figures: list) -> str:
+    """首页：星野 + 朝代分组网格（组序按 DYNASTY_ORDER，组内按生年；移除章节胶囊，人物页有全量章节）"""
     # 装饰星位固定坐标（构图手工调过，避免随机漂移）
     deco = [(8, 18, 2), (14, 62, 3), (22, 30, 2), (30, 76, 2), (36, 12, 3), (46, 55, 2),
             (55, 24, 2), (63, 70, 3), (72, 40, 2), (80, 15, 2), (86, 66, 3), (92, 35, 2)]
-    cards = []
-    for f in figures:
-        if f["status"] == "published":
-            chapters_html = "".join(
-                f'<span class="star-chapter">{esc(c["title"])} · {esc(c["subtitle"])}</span>'
-                for c in f.get("chapters", [])
-            )
-            cards.append(
-                f'''      <a class="figure-star published" href="figures/{esc(f["id"])}/index.html">
+
+    # 排序：朝代 → 生年（仅在首页渲染层排序，不改 page-data 原序）
+    figs = sorted(
+        figures,
+        key=lambda f: (DYNASTY_ORDER.index(f.get("dynasty") or DYNASTY_ORDER[-1]), f.get("born", 0)),
+    )
+
+    groups_html = []
+    for dynasty in DYNASTY_ORDER:
+        members = [f for f in figs if f.get("dynasty") == dynasty]
+        if not members:
+            continue
+        span = f"{members[0].get('born', '?')} — {members[-1].get('died', '?')}"
+        cards = []
+        for f in members:
+            if f["status"] == "published":
+                cards.append(
+                    f'''        <a class="figure-star published" href="figures/{esc(f["id"])}/index.html">
         <span class="star-dot" aria-hidden="true"></span>
         <span class="star-name">{esc(f["name"])}</span>
         <span class="star-years">{esc(f["born"])}—{esc(f["died"])}</span>
         <span class="star-oneliner">{esc(f["one_liner"])}</span>
-        {chapters_html}
       </a>'''
-            )
-        else:
-            cards.append(
-                f'''      <div class="figure-star planned" aria-disabled="true">
+                )
+            else:
+                cards.append(
+                    f'''        <div class="figure-star planned" aria-disabled="true">
         <span class="star-dot" aria-hidden="true"></span>
         <span class="star-name">{esc(f["name"])}</span>
         <span class="star-years">{esc(f["born"])}—{esc(f["died"])}</span>
         <span class="star-oneliner">{esc(f["one_liner"])}</span>
         <span class="star-planned">待生成</span>
       </div>'''
-            )
+                )
+        groups_html.append(
+            f'      <div class="dynasty-label"><span class="d-name">{esc(dynasty)}</span>'
+            f'<span class="d-line"></span><span class="d-sub">{esc(span)}</span></div>\n'
+            f'      <div class="figures-grid">\n' + "\n".join(cards) + "\n      </div>"
+        )
+
     return (
         '    <section class="home-hero">\n'
         '      <h1 class="site-title">诗词行旅</h1>\n'
@@ -339,7 +358,7 @@ def render_home(figures: list) -> str:
         '    <section class="star-field" aria-label="人物星空">\n'
         + "\n".join(f'      <span class="deco-star" style="left:{x}%;top:{y}%;width:{r * 2}px;height:{r * 2}px"></span>'
                     for x, y, r in deco) + "\n"
-        + "\n".join(cards) + "\n"
+        + "\n".join(groups_html) + "\n"
         "    </section>\n"
     )
 
@@ -510,6 +529,7 @@ def main():
             "art_name": meta.get("art_name", ""),
             "born": meta["born"], "died": meta["died"],
             "one_liner": meta["one_liner"], "status": status,
+            "dynasty": meta.get("dynasty", ""),
             "chapters": [],
         }
 

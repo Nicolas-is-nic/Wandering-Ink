@@ -1,6 +1,7 @@
 # 辛弃疾人物包元数据
 # 坐标为现代地名近似坐标（古今地名对照的锚点），用于 SVG 足迹卷轴投影
 id: xin-qiji
+dynasty: 宋
 name: 辛弃疾
 courtesy_name: 幼安
 art_name: 稼轩居士

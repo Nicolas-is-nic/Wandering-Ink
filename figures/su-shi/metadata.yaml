@@ -1,6 +1,7 @@
 # 苏轼人物包元数据
 # 坐标为现代地名近似坐标（古今地名对照的锚点），v1 用于 SVG 足迹卷轴投影
 id: su-shi
+dynasty: 宋
 name: 苏轼
 courtesy_name: 子瞻
 art_name: 东坡居士

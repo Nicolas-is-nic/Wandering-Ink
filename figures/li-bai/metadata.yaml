@@ -1,6 +1,7 @@
 # 李白人物包元数据
 # 坐标为现代地名近似坐标（古今地名对照的锚点），用于 SVG 足迹卷轴投影
 id: li-bai
+dynasty: 唐
 name: 李白
 courtesy_name: 太白
 art_name: 青莲居士

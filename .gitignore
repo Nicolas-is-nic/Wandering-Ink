@@ -8,8 +8,8 @@ dist/
 .gh-pages-work/
 
 # 临时文档与脚本（AI 协作产物，不入库）
-claude_docs/
-claude_scripts/
+agent_docs/
+agent_scripts/
 
 # macOS 系统文件
 .DS_Store

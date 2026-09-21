@@ -8,7 +8,7 @@
 
 - 线上地址：https://nicolas-is-nic.github.io/Wandering-Ink/（GitHub Pages，源为 gh-pages 分支）
 - 技术形态：多人物数据包框架（`figures/`）+ Python 构建脚本（`build/build.py`，schema 强校验与渲染）→ 零依赖静态站（`dist/`，不入库）
-- 设计文档（唯一权威 spec）：`claude_docs/2026-09-02-诗词行旅-设计文档.md`
+- 设计文档（唯一权威 spec）：`agent_docs/2026-09-02-诗词行旅-设计文档.md`
 - 后设备选人物（六人，2026-09 共识）：杜甫（诗史，底本仇兆鳌《杜诗详注》，节点多需砍到40场景内）、李清照（唯一女性视角、前后半生断崖，底本王仲闻《李清照集校注》，部分词系年争议需选点时验证）、陶渊明（归隐内心战场，底本袁行霈《陶渊明集笺注》，史料薄系年多推定）、白居易（兼济与独善，底本朱金城《白居易集笺校》，晚年曲线平）、陆游（与辛弃疾镜像，底本钱仲联《剑南诗稿校注》，以沈园+示儿做差异化，排期需与辛弃疾隔人）、王维（诗画合一，底本陈铁民《王维集校注》，「静」的张力需选点阶段验证）。排期不强求差异化、按兴趣定；每人开工仍走「新人物创作工作流」，研究先行阶段检验系年可行性
 
 ## 目录职责
@@ -21,7 +21,7 @@
 | `scripts/deploy.sh` | 一键部署脚本 | 入库 |
 | `dist/` | 构建产物（一键重建，部署走 gh-pages） | 不入库 |
 | `.gh-pages-work/` | 部署脚本的工作副本（自动创建） | 不入库 |
-| `claude_docs/`、`claude_scripts/` | AI 协作产物 | 不入库 |
+| `agent_docs/`、`agent_scripts/` | AI 协作产物 | 不入库 |
 
 ## 开发与部署步骤
 
@@ -59,9 +59,9 @@ cd dist && python3 -m http.server 8741   # 或起本地服务
 ### 4. 新增场景的插画流程
 
 1. 新场景 `image` 写 `placeholder/场景名.svg`（构建自动生成水墨占位图）
-2. 生成真实图：提示词规范与模板见 `claude_docs/即梦提示词-*.md`（四色、水墨淡彩、各人物独立视觉锁——苏轼东坡巾/李白白衣纶巾佩剑/辛弃疾束发儒冠佩剑，面部不细节刻画、无文字）
+2. 生成真实图：提示词规范与模板见 `agent_docs/即梦提示词-*.md`（四色、水墨淡彩、各人物独立视觉锁——苏轼东坡巾/李白白衣纶巾佩剑/辛弃疾束发儒冠佩剑，面部不细节刻画、无文字）
 3. 图放 `figures/<人物>/assets/images/场景名.jpg`（JPG，质量 60，长边 1280）
-   - 提示词生成已可自动化：全局 skill `jimeng-auto`（`~/.agents/skills/jimeng-auto/`），两阶段制——阶段一脚本批量注入提示词并提交生成（不下载）；阶段二 AI 给批次清单逐批引导用户在页面手动下载，用户确认后 `jimeng-collect.sh` 归档改名；挑图用 `claude_scripts/pick_gallery.py`（本地页面展示候选图+提示词，点选提交写 `results.json`，AI 直接读取入库），不用 Excel 报号；选图服务由用户终端启动（AI 代起须先 pkill 清旧、用后即杀）；压缩入库用 `sips` 60 档/1280px
+   - 提示词生成已可自动化：全局 skill `jimeng-auto`（`~/.agents/skills/jimeng-auto/`），两阶段制——阶段一脚本批量注入提示词并提交生成（不下载）；阶段二 AI 给批次清单逐批引导用户在页面手动下载，用户确认后 `jimeng-collect.sh` 归档改名；挑图用 `agent_scripts/pick_gallery.py`（本地页面展示候选图+提示词，点选提交写 `results.json`，AI 直接读取入库），不用 Excel 报号；选图服务由用户终端启动（AI 代起须先 pkill 清旧、用后即杀）；压缩入库用 `sips` 60 档/1280px
 4. YAML 改为 `image: images/场景名.jpg`，重建；`dist/placeholder-list.md` 自动只登记剩余占位图
 
 ### 5. 校对流程
@@ -79,7 +79,7 @@ cd dist && python3 -m http.server 8741   # 或起本地服务
 3. **metadata.yaml 先行**：`places` 全包唯一坐标源（经纬度必须查证，禁编造）、人物信息、route
 4. **逐章创作**：动笔前先精读黄州章 YAML 对齐文风；叙事第二人称、先铺垫处境再落诗；细节演绎进 `notes` 标「待校/演绎」；每场景 `source` 落具体卷次；全部 `proofed: false`
 5. **校对闭环**：见上述校对流程，逐字核对后回填 `proofed: true`
-6. **插画与上线**：placeholder 占位 → 即梦提示词文档（参照 `claude_docs/即梦提示词-*.md`，画幅 3:2）→ jimeng-auto skill 批量生成（两阶段制 + pick_gallery.py 选图页面，见「新增场景的插画流程」）→ 挑图入库重建 → `./scripts/deploy.sh` 上线
+6. **插画与上线**：placeholder 占位 → 即梦提示词文档（参照 `agent_docs/即梦提示词-*.md`，画幅 3:2）→ jimeng-auto skill 批量生成（两阶段制 + pick_gallery.py 选图页面，见「新增场景的插画流程」）→ 挑图入库重建 → `./scripts/deploy.sh` 上线
 
 ## 开发规则（后续所有改动必须遵循）
 
@@ -136,6 +136,6 @@ cd dist && python3 -m http.server 8741   # 或起本地服务
 ### 7. 工作流约定
 
 - Python 一律走 uv 全新环境（`.venv`），任何 pip 操作前确认目标环境。
-- `claude_docs/`、`claude_scripts/`、`dist/`、`.gh-pages-work/` 不入 git；代码文件英文命名，生成文档中文命名，代码注释中文，禁止 emoji。
+- `agent_docs/`、`agent_scripts/`、`dist/`、`.gh-pages-work/` 不入 git；代码文件英文命名，生成文档中文命名，代码注释中文，禁止 emoji。
 - 图片资产入库（`figures/<人物>/assets/images/`，JPG 质量 60-85、长边 1280-1600），压缩换格式统一处理，勿单张随意替换。
 - 任何内容/模板/脚本改动后：重新构建 → 检查 HTML 标签配对 → 抽查页面关键内容 → 确认校对清单更新。改文案必须重跑构建，不要手改 dist。

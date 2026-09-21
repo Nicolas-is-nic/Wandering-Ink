@@ -1,5 +1,67 @@
 [
   {
+    "id": "du-fu",
+    "name": "杜甫",
+    "courtesy_name": "子美",
+    "art_name": "少陵野老",
+    "born": 712,
+    "died": 770,
+    "one_liner": "唐代现实主义诗人，诗圣",
+    "status": "published",
+    "dynasty": "唐",
+    "chapters": [
+      {
+        "id": "zhuangyou",
+        "title": "壮游",
+        "subtitle": "裘马清狂",
+        "era": "712-745",
+        "scene_count": 6
+      },
+      {
+        "id": "changan",
+        "title": "长安",
+        "subtitle": "儒冠多误身",
+        "era": "746-755",
+        "scene_count": 7
+      },
+      {
+        "id": "xianzei",
+        "title": "陷贼",
+        "subtitle": "国破与担当",
+        "era": "756-757",
+        "scene_count": 7
+      },
+      {
+        "id": "huazhou",
+        "title": "华州",
+        "subtitle": "目击者",
+        "era": "758-759",
+        "scene_count": 5
+      },
+      {
+        "id": "caotang",
+        "title": "草堂",
+        "subtitle": "休憩与再痛",
+        "era": "759-765",
+        "scene_count": 9
+      },
+      {
+        "id": "kuizhou",
+        "title": "夔州",
+        "subtitle": "苍茫",
+        "era": "766-768",
+        "scene_count": 5
+      },
+      {
+        "id": "huxiang",
+        "title": "湖湘",
+        "subtitle": "孤舟",
+        "era": "768-770",
+        "scene_count": 4
+      }
+    ]
+  },
+  {
     "id": "li-bai",
     "name": "李白",
     "courtesy_name": "太白",
@@ -8,6 +70,7 @@
     "died": 762,
     "one_liner": "唐代浪漫主义诗人，诗仙",
     "status": "published",
+    "dynasty": "唐",
     "chapters": [
       {
         "id": "shuzhong",
@@ -62,6 +125,7 @@
     "died": 1101,
     "one_liner": "北宋文学家、书画家，唐宋八大家之一",
     "status": "published",
+    "dynasty": "宋",
     "chapters": [
       {
         "id": "meizhou",
@@ -123,6 +187,7 @@
     "died": 1207,
     "one_liner": "南宋豪放派词人，词中之龙",
     "status": "published",
+    "dynasty": "宋",
     "chapters": [
       {
         "id": "qilu",

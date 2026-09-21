@@ -47,7 +47,7 @@ route:                        # 足迹总览（人物页地图数据源），坐
   - { place: 万安, year: 1176, label: 书造口壁 }
   - { place: 鄂州, year: 1179, label: 小山亭赋词 }
   - { place: 长沙, year: 1180, label: 创飞虎军 }
-  - { place: 上饶, year: 1182, label: 归耕带湖 }
+  - { place: 上饶, year: 1181, label: 归耕带湖 }
   - { place: 博山, year: 1188, label: 道中书壁 }
   - { place: 铅山, year: 1188, label: 鹅湖之会 }
   - { place: 福州, year: 1194, label: 再起再罢 }

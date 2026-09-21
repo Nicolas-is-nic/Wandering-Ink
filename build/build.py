@@ -171,11 +171,11 @@ def make_placeholder_svg(title: str, subtitle: str = "占位图 · 后期以 AI 
 """
 
 
-def ensure_placeholder(rel_path: str, title: str) -> Path:
-    """确保占位 SVG 存在，返回 dist 内绝对路径；非 placeholder/ 前缀的真实资产不生成"""
+def ensure_placeholder(rel_path: str, title: str, fid: str = "") -> Path:
+    """确保占位 SVG 存在于人物资产目录（与页面 src 路径一致），返回 dist 内绝对路径；非 placeholder/ 前缀的真实资产不生成"""
     if not rel_path.startswith("placeholder/"):
         return ASSETS_DIR / rel_path
-    target = ASSETS_DIR / rel_path
+    target = (ASSETS_DIR / "figures" / fid / rel_path) if fid else (ASSETS_DIR / rel_path)
     if not target.exists():
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(make_placeholder_svg(title), encoding="utf-8")
@@ -413,9 +413,9 @@ def render_chapter_page(meta: dict, chapter: dict, next_chapter: dict | None = N
     sections = []
     for sc in chapter["scenes"]:
         if sc.get("image"):
-            ensure_placeholder(sc["image"], sc.get("title") or sc.get("poem_title", ""))
+            ensure_placeholder(sc["image"], sc.get("title") or sc.get("poem_title", ""), meta["id"])
         if sc.get("artifact_image"):
-            ensure_placeholder(sc["artifact_image"], sc.get("artifact", "真迹"))
+            ensure_placeholder(sc["artifact_image"], sc.get("artifact", "真迹"), meta["id"])
         sections.append(render_scene(sc, page_path, meta["id"]))
     body = "\n".join(sections)
     head = (

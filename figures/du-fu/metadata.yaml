@@ -1,0 +1,68 @@
+# 杜甫人物包元数据
+# 坐标为现代地名近似坐标（古今地名对照的锚点），用于 SVG 足迹卷轴投影
+id: du-fu
+name: 杜甫
+courtesy_name: 子美
+art_name: 少陵野老
+born: 712
+died: 770
+one_liner: 唐代现实主义诗人，诗圣
+dynasty: 唐
+status: published            # 已过构建校验，进入交叉校对阶段；正式上线走 deploy.sh
+birthplace: 巩县             # 河南巩县（今巩义）南瑶湾村
+
+places:                       # 古今地名对照表：全包唯一坐标源，scene 与 route 均按名引用
+  巩县: { lng: 112.97, lat: 34.75 }
+  姑苏: { lng: 120.58, lat: 31.30 }
+  泰安: { lng: 117.13, lat: 36.19 }
+  洛阳: { lng: 112.45, lat: 34.62 }
+  梁宋: { lng: 114.30, lat: 34.80 }
+  兖州: { lng: 116.83, lat: 35.55 }
+  长安: { lng: 108.94, lat: 34.34 }
+  奉先: { lng: 109.58, lat: 35.01 }
+  鄜州: { lng: 109.38, lat: 35.99 }
+  凤翔: { lng: 107.40, lat: 34.52 }
+  华州: { lng: 109.77, lat: 34.51 }
+  石壕村: { lng: 111.50, lat: 34.74 }
+  秦州: { lng: 105.72, lat: 34.58 }
+  同谷: { lng: 105.73, lat: 33.75 }
+  成都: { lng: 104.07, lat: 30.67 }
+  梓州: { lng: 105.09, lat: 31.10 }
+  云安: { lng: 108.70, lat: 30.93 }
+  夔州: { lng: 109.46, lat: 31.02 }
+  江陵: { lng: 112.24, lat: 30.33 }
+  岳阳: { lng: 113.13, lat: 29.36 }
+  潭州: { lng: 112.94, lat: 28.23 }
+  耒阳: { lng: 112.85, lat: 26.42 }
+
+route:                        # 足迹总览（人物页地图数据源），坐标经 places 查询
+  - { place: 巩县, year: 712, label: 生于巩县 }
+  - { place: 姑苏, year: 731, label: 吴越之游 }
+  - { place: 洛阳, year: 735, label: 应举不第 }
+  - { place: 泰安, year: 736, label: 齐赵之游 }
+  - { place: 洛阳, year: 744, label: 遇李白 }
+  - { place: 梁宋, year: 744, label: 梁宋同游 }
+  - { place: 兖州, year: 745, label: 石门一别 }
+  - { place: 长安, year: 746, label: 入长安 }
+  - { place: 奉先, year: 755, label: 幼子之殇 }
+  - { place: 鄜州, year: 756, label: 乱中携家 }
+  - { place: 长安, year: 756, label: 陷贼城中 }
+  - { place: 凤翔, year: 757, label: 麻鞋见天子 }
+  - { place: 鄜州, year: 757, label: 北征省家 }
+  - { place: 华州, year: 758, label: 贬官华州 }
+  - { place: 洛阳, year: 759, label: 归洛道中 }
+  - { place: 石壕村, year: 759, label: 暮投石壕 }
+  - { place: 秦州, year: 759, label: 弃官客秦 }
+  - { place: 同谷, year: 759, label: 岁拾橡栗 }
+  - { place: 成都, year: 760, label: 卜居草堂 }
+  - { place: 梓州, year: 762, label: 避乱东川 }
+  - { place: 成都, year: 764, label: 重返草堂 }
+  - { place: 云安, year: 765, label: 病滞云安 }
+  - { place: 夔州, year: 766, label: 迁居夔州 }
+  - { place: 江陵, year: 768, label: 出峡东下 }
+  - { place: 岳阳, year: 768, label: 登岳阳楼 }
+  - { place: 潭州, year: 769, label: 流寓潭州 }
+  - { place: 耒阳, year: 770, label: 耒阳阻水 }
+  - { place: 潭州, year: 770, label: 病逝舟中 }
+
+chapters_ref: chapters/

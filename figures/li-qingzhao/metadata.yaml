@@ -1,0 +1,59 @@
+# 李清照人物包元数据
+# 坐标为现代地名近似坐标（古今地名对照的锚点），用于 SVG 足迹卷轴投影
+# 章安今地核证：台州椒江区章安街道（1994 台州撤地设市后划入椒江，历史上属临海县）
+# 乌江核证：和县乌江镇（维基 31.86, 118.46），项羽庙在镇东南凤凰山
+
+id: li-qingzhao
+dynasty: 宋
+name: 李清照
+courtesy_name: ""
+art_name: 易安居士
+born: 1084
+died: "约1155"
+one_liner: 两宋之际女词人，号易安居士
+status: published              # 开发期状态；七章完成、校对归零后置 published
+birthplace: 明水             # 齐州章丘（今济南章丘）
+
+places:                       # 古今地名对照表：全包唯一坐标源，scene 与 route 均按名引用
+  明水: { lng: 117.53, lat: 36.72 }
+  汴京: { lng: 114.31, lat: 34.80 }
+  青州: { lng: 118.48, lat: 36.68 }
+  昌乐: { lng: 118.83, lat: 36.70 }
+  莱州: { lng: 119.94, lat: 37.18 }
+  淄州: { lng: 117.97, lat: 36.96 }
+  江宁: { lng: 118.78, lat: 32.06 }
+  乌江: { lng: 118.46, lat: 31.86 }
+  池阳: { lng: 117.49, lat: 30.66 }
+  洪州: { lng: 115.88, lat: 28.68 }
+  越州: { lng: 120.58, lat: 30.03 }
+  黄岩: { lng: 121.26, lat: 28.65 }
+  章安: { lng: 121.38, lat: 28.72 }
+  温州: { lng: 120.67, lat: 28.00 }
+  衢州: { lng: 118.87, lat: 28.94 }
+  临安: { lng: 120.16, lat: 30.29 }
+  金华: { lng: 119.65, lat: 29.10 }
+
+route:                        # 足迹总览（人物页地图数据源），坐标经 places 查询；回流段如实保留
+  - { place: 明水, year: 1084, label: 生于明水 }
+  - { place: 汴京, year: 1100, label: 词动京师 }
+  - { place: 青州, year: 1107, label: 屏居归来堂 }
+  - { place: 昌乐, year: 1121, label: 道中寄姊妹 }
+  - { place: 莱州, year: 1121, label: 莱州独坐 }
+  - { place: 淄州, year: 1124, label: 随任淄州 }
+  - { place: 青州, year: 1127, label: 载书十五车 }
+  - { place: 江宁, year: 1127, label: 押书抵江宁 }
+  - { place: 乌江, year: 1129, label: 过乌江 }
+  - { place: 池阳, year: 1129, label: 池阳之别 }
+  - { place: 江宁, year: 1129, label: 八月十八 }
+  - { place: 越州, year: 1129, label: 东下避兵 }
+  - { place: 黄岩, year: 1130, label: 陆行走黄岩 }
+  - { place: 章安, year: 1130, label: 御舟海道 }
+  - { place: 温州, year: 1130, label: 随驾之温 }
+  - { place: 越州, year: 1130, label: 复还越州 }
+  - { place: 衢州, year: 1130, label: 十二月之衢 }
+  - { place: 越州, year: 1131, label: 卜居会稽 }
+  - { place: 临安, year: 1132, label: 再嫁与讼案 }
+  - { place: 金华, year: 1134, label: 避乱金华 }
+  - { place: 临安, year: 1135, label: 晚居临安 }
+
+chapters_ref: chapters/

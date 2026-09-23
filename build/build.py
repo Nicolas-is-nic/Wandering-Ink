@@ -391,7 +391,8 @@ def render_figure_page(meta: dict, chapters: list) -> str:
         f'    <section class="figure-head">\n'
         f'      <p class="figure-kicker">人物卷</p>\n'
         f'      <h1 class="figure-name">{esc(meta["name"])}</h1>\n'
-        f'      <p class="figure-names">字 {esc(meta.get("courtesy_name", "—"))} · 号 {esc(meta.get("art_name", "—"))}</p>\n'
+        # 字/号按需拼接：无字（如李清照）或无号时不渲染空占位
+        f'      <p class="figure-names">{" · ".join(p for p in (f"字 {esc(meta['courtesy_name'])}" if meta.get("courtesy_name") else "", f"号 {esc(meta['art_name'])}" if meta.get("art_name") else "") if p)}</p>\n'
         f'      <p class="figure-years">{esc(meta["born"])}—{esc(meta["died"])}</p>\n'
         f'      <p class="figure-oneliner">{esc(meta["one_liner"])}</p>\n'
         f"    </section>\n"

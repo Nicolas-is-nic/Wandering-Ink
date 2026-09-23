@@ -117,6 +117,68 @@
     ]
   },
   {
+    "id": "li-qingzhao",
+    "name": "李清照",
+    "courtesy_name": "",
+    "art_name": "易安居士",
+    "born": 1084,
+    "died": "约1155",
+    "one_liner": "两宋之际女词人，号易安居士",
+    "status": "published",
+    "dynasty": "宋",
+    "chapters": [
+      {
+        "id": "mingshui",
+        "title": "明水",
+        "subtitle": "藕花深处",
+        "era": "1084-1100",
+        "scene_count": 3
+      },
+      {
+        "id": "bianjing",
+        "title": "汴京",
+        "subtitle": "中州盛日",
+        "era": "1101-1107",
+        "scene_count": 5
+      },
+      {
+        "id": "qingzhou",
+        "title": "青州",
+        "subtitle": "赌书泼茶",
+        "era": "1107-1121",
+        "scene_count": 5
+      },
+      {
+        "id": "laizhou",
+        "title": "莱州",
+        "subtitle": "十五车",
+        "era": "1121-1127",
+        "scene_count": 4
+      },
+      {
+        "id": "jiankang",
+        "title": "建康",
+        "subtitle": "无所之",
+        "era": "1128-1129",
+        "scene_count": 6
+      },
+      {
+        "id": "jiangnan",
+        "title": "江南",
+        "subtitle": "倔强",
+        "era": "1130-1133",
+        "scene_count": 6
+      },
+      {
+        "id": "linan",
+        "title": "临安",
+        "subtitle": "帘儿底下",
+        "era": "1134-1155",
+        "scene_count": 6
+      }
+    ]
+  },
+  {
     "id": "su-shi",
     "name": "苏轼",
     "courtesy_name": "子瞻",

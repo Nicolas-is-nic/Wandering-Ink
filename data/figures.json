@@ -179,6 +179,75 @@
     ]
   },
   {
+    "id": "lu-you",
+    "name": "陆游",
+    "courtesy_name": "务观",
+    "art_name": "放翁",
+    "born": 1125,
+    "died": 1210,
+    "one_liner": "南宋诗人，存诗九千余首，号放翁",
+    "status": "published",
+    "dynasty": "宋",
+    "chapters": [
+      {
+        "id": "shanyin",
+        "title": "山阴",
+        "subtitle": "藏书楼",
+        "era": "1125-1143",
+        "scene_count": 3
+      },
+      {
+        "id": "shenyuan",
+        "title": "沈园",
+        "subtitle": "钗头凤",
+        "era": "1144-1155",
+        "scene_count": 4
+      },
+      {
+        "id": "jianghuai",
+        "title": "江淮",
+        "subtitle": "力说用兵",
+        "era": "1158-1167",
+        "scene_count": 4
+      },
+      {
+        "id": "rushu",
+        "title": "入蜀",
+        "subtitle": "大散关",
+        "era": "1170-1172",
+        "scene_count": 5
+      },
+      {
+        "id": "shuzhong",
+        "title": "蜀中",
+        "subtitle": "放翁",
+        "era": "1172-1178",
+        "scene_count": 5
+      },
+      {
+        "id": "donggui",
+        "title": "东归",
+        "subtitle": "屡黜",
+        "era": "1179-1186",
+        "scene_count": 5
+      },
+      {
+        "id": "jinghu",
+        "title": "镜湖",
+        "subtitle": "回响",
+        "era": "1186-1202",
+        "scene_count": 5
+      },
+      {
+        "id": "munian",
+        "title": "暮年",
+        "subtitle": "家祭",
+        "era": "1202-1210",
+        "scene_count": 4
+      }
+    ]
+  },
+  {
     "id": "su-shi",
     "name": "苏轼",
     "courtesy_name": "子瞻",

@@ -1,0 +1,64 @@
+# 陆游人物包元数据
+# 坐标为现代地名近似坐标（古今地名对照的锚点），用于 SVG 足迹卷轴投影
+# 坐标核证记录见 agent_docs/陆游篇-开发方案.md 第一节：
+#   站内复用 6（山阴=辛包绍兴/临安/福州/镇江/夔州=杜包/成都=杜包），
+#   维基 API 8（寿春/宁德/南郑/蜀州/嘉州/荣州/隆兴/建安）、OSM 1（严州梅城）、网检 1（剑门）
+
+id: lu-you
+dynasty: 宋
+name: 陆游
+courtesy_name: 务观
+art_name: 放翁
+born: 1125
+died: 1210
+one_liner: 南宋诗人，存诗九千余首，号放翁
+status: published                # 开发期状态；八章完成、校对归零后置 published
+birthplace: 寿春               # 淮上舟中（今安徽寿县）
+
+places:                        # 古今地名对照表：全包唯一坐标源，scene 与 route 均按名引用
+  寿春: { lng: 116.78, lat: 32.58 }
+  山阴: { lng: 120.58, lat: 30.03 }
+  临安: { lng: 120.16, lat: 30.29 }
+  宁德: { lng: 119.55, lat: 26.67 }
+  福州: { lng: 119.30, lat: 26.08 }
+  镇江: { lng: 119.42, lat: 32.20 }
+  隆兴: { lng: 115.86, lat: 28.68 }
+  夔州: { lng: 109.46, lat: 31.02 }
+  南郑: { lng: 107.02, lat: 33.07 }
+  剑门: { lng: 105.59, lat: 32.24 }
+  蜀州: { lng: 103.67, lat: 30.63 }
+  成都: { lng: 104.07, lat: 30.67 }
+  嘉州: { lng: 103.77, lat: 29.55 }
+  荣州: { lng: 104.42, lat: 29.45 }
+  建安: { lng: 118.32, lat: 27.03 }
+  严州: { lng: 119.50, lat: 29.54 }
+
+route:                         # 足迹总览（人物页地图数据源），坐标经 places 查询
+  - { place: 寿春, year: 1125, label: 生于淮上舟中 }
+  - { place: 山阴, year: 1130, label: 奔乱归里 }
+  - { place: 临安, year: 1153, label: 锁厅试第一 }
+  - { place: 山阴, year: 1155, label: 沈园题壁 }
+  - { place: 宁德, year: 1158, label: 初仕主簿 }
+  - { place: 福州, year: 1159, label: 福州决曹 }
+  - { place: 临安, year: 1160, label: 敕令所删定官 }
+  - { place: 镇江, year: 1164, label: 通判镇江 }
+  - { place: 隆兴, year: 1165, label: 通判隆兴 }
+  - { place: 山阴, year: 1166, label: 力说用兵免职 }
+  - { place: 夔州, year: 1170, label: 入蜀记 }
+  - { place: 南郑, year: 1172, label: 王炎幕府 }
+  - { place: 剑门, year: 1172, label: 细雨骑驴 }
+  - { place: 成都, year: 1172, label: 除参议官 }
+  - { place: 蜀州, year: 1173, label: 通判蜀州 }
+  - { place: 嘉州, year: 1173, label: 摄知嘉州 }
+  - { place: 荣州, year: 1174, label: 摄知荣州 }
+  - { place: 成都, year: 1175, label: 自号放翁 }
+  - { place: 建安, year: 1179, label: 常平茶事 }
+  - { place: 隆兴, year: 1180, label: 江西赈灾 }
+  - { place: 山阴, year: 1181, label: 罢归 }
+  - { place: 临安, year: 1186, label: 小楼听雨 }
+  - { place: 严州, year: 1186, label: 知严州 }
+  - { place: 山阴, year: 1189, label: 风月小轩 }
+  - { place: 临安, year: 1202, label: 修孝光实录 }
+  - { place: 山阴, year: 1203, label: 辛弃疾过访 }
+
+chapters_ref: chapters/
